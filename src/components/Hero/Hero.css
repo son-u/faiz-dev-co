@@ -1,0 +1,184 @@
+.parent-container {
+  background: #f4f6f8;
+}
+.sub-container {
+  display: flex;
+  align-items: center;
+  padding: 6rem 1rem;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.hero-btn:hover svg {
+  transform: translateX(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 1024px;
+}
+.hero-h2 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+.hero-para {
+  font-weight: 600;
+  line-height: 1.6;
+}
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+.bounce-illustration {
+  animation-name: bounce-illustration;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce-illustration {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(1.5px);
+  }
+}
+
+.hero-wave {
+  background-image: url("/src/assets/images/others/wave-bg.svg");
+  background-repeat: no-repeat;
+
+  display: block;
+  height: 220px;
+  width: 100%;
+  transform-origin: center top;
+  -animation-timeline: auto;
+  -animation-range-start: normal;
+  -animation-range-end: normal;
+  animation: 2000ms cubic-bezier(0.23, 1, 0.32, 1) 0s 1 normal forwards running
+    animateWave;
+  background-position: center center;
+}
+
+@media (max-width: 500px) and (min-width: 0) {
+  .parent-container {
+    padding: 0 1rem;
+  }
+  .sub-container {
+    flex-direction: column;
+    padding: 3rem 0 0 0;
+  }
+  .hero-h2 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  .hero-left {
+    width: 100%;
+    gap: 3rem !important;
+  }
+  .hero-right {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  .parent-container {
+    padding: 0 1rem;
+  }
+  .sub-container {
+    flex-direction: column;
+    padding: 3rem 0 0;
+  }
+  .hero-h2 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  .hero-left {
+    width: 100%;
+    gap: 3rem !important;
+  }
+  .hero-right {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img {
+    max-width: 65%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 769px) {
+  .hero-h2 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  .hero-left {
+    width: 100%;
+  }
+  .hero-right {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img {
+    max-width: 65%;
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) and (min-width: 1px) {
+  .marker {
+    padding-right: 0;
+  }
+  .marker:after {
+    bottom: -30px;
+    left: 90%;
+    margin-left: -163px;
+  }
+}
+@media (max-width: 600px) and (min-width: 376px) {
+  .marker {
+    padding-right: 0;
+  }
+  .marker:after {
+    bottom: -30px;
+    left: 50%;
+    margin-left: -163px;
+  }
+}
+
+@media (max-width: 1082px) and (min-width: 769px) {
+  .marker {
+    padding-right: 0;
+  }
+  .marker:after {
+    bottom: -30px;
+    left: 50%;
+    margin-left: -95px;
+  }
+}
+
+@media (min-width: 1083px) {
+  .marker {
+    padding-right: 0;
+  }
+  .marker:after {
+    bottom: -30px;
+    left: 22%;
+    margin-left: -95px;
+  }
+}

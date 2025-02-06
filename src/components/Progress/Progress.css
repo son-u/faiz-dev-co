@@ -1,0 +1,83 @@
+.progress-heading {
+  text-align: center;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 32px;
+}
+
+.progress-heading::after {
+  content: "";
+  background-image: url("/src/assets/images/others/marker.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 125px;
+  height: 30px;
+  position: absolute;
+  bottom: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-para {
+  max-width: 800px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.desktop-progress-bar {
+  background-image: url("/src/assets/images/others/progress-bar-pc.svg");
+  height: 80vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+}
+
+
+.mobile-progress-bar {
+  background-image: url("/src//assets/images/others/Progress-bar-img-mobile.png") !important;
+  height: 321px !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+}
+
+
+
+@media (max-width: 600px) and (min-width: 0) {
+  .progress-heading {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  .desktop-progress-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  .progress-heading {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  .mobile-progress-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 993px) {
+  .progress-heading {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  .mobile-progress-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-progress-bar {
+    display: none;
+  }
+}

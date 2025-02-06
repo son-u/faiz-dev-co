@@ -1,18 +1,155 @@
 * {
-  margin: 0;
+  list-style: none;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+  outline: 0;
+  text-decoration: none;
 }
 
 :root {
-  --primary-color: #6200ff;
-  --secondary-color: #6c757d;
-  --spacing-unit: 1rem;
+  --color-gray-0: #fff;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #dadee2;
+  --color-gray-300: rgba(255, 255, 255, 0.5);
+  --color-gray-300: #8e9093;
+  --color-gray-400: #999;
+  --color-gray-500: #44484b;
+  --color-gray-600: #363636;
+  --color-gray-700: #222;
+  --color-gray-800: #1f1f1f;
+  --color-gray-900: #111;
+
+  --color-primary: #001219;
+  --color-secondary: rgba(0, 0, 0, 0.8);
+
+  --transition: all ease-in-out 0.3s;
+
+  --container-width-lg: 76%;
+  --container-width-md: 94%;
+}
+
+body {
+  color: var(--color-gray-600);
+  font-family: "Nunito Sans", serif;
+  margin: 0 auto;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.secondary-container {
+  max-width: 1025px;
+  margin: auto;
+}
+
+a {
+  color: var(--color-gray-900);
+  outline: none !important;
+}
+
+a.active {
+  color: var(--color-primary);
+}
+p {
+  font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-gray-900);
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.85rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-gray-0);
+  padding: 10px 20px;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.41) 6px 5px 14px -6px;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-gray-0);
+  font-size: 15px;
+}
+
+.btn-primary:hover {
+  background: var(--color-gray-0);
+  color: var(--color-primary);
+}
+
+.btn-secondary {
+  background: var(--color-gray-0);
+  color: var(--color-primary);
+}
+.btn-secondary:hover {
+  box-shadow: none;
+}
+
+.marker {
+  position: relative;
+  display: inline;
+  width: auto;
+}
+
+.marker-center {
+  padding-right: 0;
+}
+
+.marker:after {
+  content: "";
+  width: 125px;
+  height: 30px;
+  position: absolute;
+  bottom: -25px;
+  right: -30px;
+  background-image: url("/src/assets/images/others/marker.svg");
+  background-repeat: no-repeat;
+}
+
+.marker-center:after {
+  bottom: -30px;
+  left: 50%;
+  margin-left: -60px;
 }
