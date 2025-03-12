@@ -8,6 +8,8 @@ import Counter from "../components/Counter/Counter";
 import Services from "../components/Services/Services";
 import Pricing from "../components/Pricing/Pricing";
 import Testimonials from "../components/Testimonials/Testimonials";
+import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -21,6 +23,8 @@ const Home = () => {
       <Counter />
       <Pricing />
       <Testimonials />
+      <Contact/>
+      <Footer/>
     </div>
   );
 };

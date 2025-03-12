@@ -1,4 +1,13 @@
-import { FaClipboardCheck, FaSmile, FaAward, FaClock } from "react-icons/fa";
+import {
+  FaClipboardCheck,
+  FaSmile,
+  FaAward,
+  FaClock,
+  FaLightbulb,
+  FaRocket,
+  FaUsers,
+  FaCheckCircle,
+} from "react-icons/fa";
 import ApichaCover from "../assets/images/Featured/Apicha_Cover.png";
 import ApichaSlideUp from "../assets/images/Featured/Apicha-slide-up.png";
 import DayoffCover from "../assets/images/Featured/Day_Off_cover.png";
@@ -42,6 +51,8 @@ import marketing from "../assets/images/services/marketing.png";
 import wordpress from "../assets/images/services/wordpress.png";
 import shopify from "../assets/images/services/shopify.png";
 import ecommerce from "../assets/images/services/ecommerce-website.png";
+//Images for founders img
+import avatar from "../assets/images/others/avatar.jpg";
 
 export const featuredProjects = [
   {
@@ -274,7 +285,6 @@ export const pricingPlans = [
   },
 ];
 
-
 export const testimonialsData = [
   {
     id: 1,
@@ -353,4 +363,90 @@ export const testimonialsData = [
     position: "Redesign of Website",
     text: "Booking cars has never been easier, thanks to Faiz Dev's fast and stylish website redesign.",
   },
+];
+
+export const foundersData = [
+  {
+    id: 1,
+    name: "Sonu Sharma",
+    role: "Full Stack Developer",
+    post: "Co Founder",
+    image: avatar,
+    social: {
+      linkedin: "/linkedin-sonu",
+      github: "/github-sonu",
+    },
+    variant: "first",
+  },
+  {
+    id: 2,
+    name: "Faiz Imam",
+    role: "Front-End Developer",
+    post: "Co Founder",
+    image: avatar,
+    social: {
+      linkedin: "/linkedin-faiz",
+      github: "/github-faiz",
+    },
+    variant: "second",
+  },
+];
+
+// Data for WhyChooseUS cards
+export const chooseUs = [
+  {
+    id: 1,
+    Icon: FaLightbulb,
+    title: "Innovative Solutions",
+    description:
+      "We leverage the latest technologies to deliver creative, forward-thinking designs that set your brand apart.",
+    extraClass: "whychooseus__card--rotated",
+  },
+  {
+    id: 2,
+    Icon: FaRocket,
+    title: "Fast Performance",
+    description:
+      "Our cutting-edge techniques ensure that your website is optimized for speed and efficiency.",
+  },
+  {
+    id: 3,
+    Icon: FaUsers,
+    title: "Customer Focus",
+    description:
+      "We build digital experiences centered around your audience’s needs to foster engagement and loyalty.",
+  },
+  {
+    id: 4,
+    Icon: FaCheckCircle,
+    title: "Quality Assurance",
+    description:
+      "Our commitment to quality means every project meets the highest standards of design and functionality.",
+  },
+];
+
+
+
+export const faqData = [
+  {
+    question: "What services does your agency offer?",
+    answer:
+      "We provide end-to-end web solutions, including design, development, digital marketing, branding, and e-commerce services.",
+  },
+  {
+    question: "How do you ensure project success?",
+    answer:
+      "Our team follows a rigorous process from initial concept to final delivery, ensuring quality at every step.",
+  },
+  {
+    question: "What is your typical project timeline?",
+    answer:
+      "Project timelines vary based on scope, but we work efficiently to deliver high-quality solutions within agreed timeframes.",
+  },
+  {
+    question: "Do you offer support after project delivery?",
+    answer:
+      "Yes, we offer comprehensive support and maintenance services to ensure your digital presence remains robust.",
+  },
+  
 ];

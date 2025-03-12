@@ -1,9 +1,31 @@
-import React from 'react'
+import React from "react";
+import "../styles/Portfolio.css";
+import PortfolioCards from "../components/Portfolio/PortfolioCards";
+import RecentProjects from "../components/RecentProjects/RecentProjects";
+import FaqSection from "../components/FaqSection/FaqSection";
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
-  )
-}
+    <>
+      <RecentProjects />
 
-export default Portfolio
+      <div className="portfolio-banner">
+        <div className="portfolio-banner__content">
+          <h1 className="portfolio-banner__heading">
+            Our Work,
+            <br /> Your Success
+          </h1>
+          <p className="portfolio-banner__description">
+            Explore our creative portfolio featuring standout projects in Real
+            Estate, Tour &amp; Travels, Healthcare, and beyond.
+          </p>
+        </div>
+      </div>
+
+      <PortfolioCards />
+      <FaqSection />
+    </>
+  );
+};
+
+export default Portfolio;

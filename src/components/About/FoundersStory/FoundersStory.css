@@ -1,0 +1,166 @@
+.founders__container {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  padding: 6rem 2rem;
+  align-items: center;
+}
+
+.founders__cards {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.founders__container .founders__card {
+  min-width: 230px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0000001f;
+  margin: 2rem 0;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.founders__card--second {
+  margin-top: 180px !important;
+}
+
+.founders__card-image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 1.5rem;
+}
+
+.founders__card-post {
+  font-size: 16px;
+  font-family: "Playball", serif;
+  font-weight: normal;
+}
+
+.founders__card-name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.founders__card-role {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.founders__social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+}
+
+.founders__social-icons .icon-img {
+  height: 30px;
+  width: 30px;
+  color: #000000;
+  transition: all ease-in-out 0.3s;
+}
+
+.founders__social-icons .icon-img:hover {
+  color: #0000007a;
+}
+
+.founders__description-heading {
+  display: inline-block;
+  color: white;
+  background-color: #131212;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+  margin-bottom: 0.5rem;
+}
+
+.founders__description-title {
+  font-size: 40px;
+}
+
+.founders__description-text {
+  font-size: 18px;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+@media (max-width: 600px) and (min-width: 0) {
+  .about-hero {
+    padding: 2rem 0 0 0;
+  }
+
+  .founders__container {
+    flex-direction: column;
+    padding: 4rem 1rem;
+    gap: 2rem;
+  }
+  .founders__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    min-height: 600px;
+    position: relative;
+  }
+  .founders__container .founders__card {
+    margin: 0 !important;
+    max-width: 230px !important;
+  }
+  .founders__card--first {
+    align-self: flex-start;
+    margin-bottom: 2rem !important;
+  }
+  .founders__card--second {
+    align-self: flex-end;
+    margin-top: auto !important;
+  }
+  .founders__description-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 769px) and (min-width: 601px) {
+  .founders__container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1.5rem;
+  }
+  .founders__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .founders__container .founders__card {
+    max-width: 270px;
+  }
+  .founders__description {
+    padding: 1.2rem 2rem;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+  .founders__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    gap: 3rem;
+  }
+  .founders__container .founders__card {
+    max-width: 300px;
+  }
+  .founders__description-title {
+    font-size: 30px !important;
+  }
+}
