@@ -1,5 +1,6 @@
 .parent-container {
   background: #f4f6f8;
+   height: calc(100vh - 1rem - 220px);
 }
 .sub-container {
   display: flex;

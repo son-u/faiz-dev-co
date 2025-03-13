@@ -1,0 +1,141 @@
+.whychooseus {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 2rem;
+}
+
+.whychooseus__header {
+  margin-bottom: 2rem;
+}
+
+.whychooseus__title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.whychooseus__subtitle {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.whychooseus__tagline {
+  max-width: 400px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.whychooseus__grid {
+  display: flex;
+  gap: 1.88rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.whychooseus__card {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 300px !important;
+}
+
+.whychooseus__card--rotated {
+  transform: rotate(-7deg);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.whychooseus__card--rotated:hover {
+  transform: rotate(0deg);
+}
+
+.whychooseus__card__icon {
+  margin-bottom: 0.5rem;
+}
+
+.whychooseus__card__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.whychooseus__card__description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.whychooseus__header {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 600px) and (min-width: 0) {
+  .whychooseus {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+  }
+
+  .whychooseus__header {
+    padding: 0 1rem;
+  }
+
+  .whychooseus__title {
+    font-size: 2.5rem;
+  }
+
+  .whychooseus__subtitle {
+    font-size: 2rem;
+  }
+
+  .whychooseus__card {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 601px) {
+  .whychooseus {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    align-items: flex-start;
+    margin-top: 4rem;
+  }
+
+  .whychooseus__header {
+    padding: 0 1.88rem;
+  }
+
+  .whychooseus__title {
+    font-size: 2.5rem;
+  }
+
+  .whychooseus__subtitle {
+    font-size: 1.89rem;
+  }
+
+  .whychooseus__card {
+    max-width: 300px;
+  }
+
+  .whychooseus__grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1024px) {
+  .whychooseus__grid {
+    width: 80%;
+    justify-content: flex-end;
+  }
+}

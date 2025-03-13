@@ -1,0 +1,132 @@
+.agile-team {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.agile-team__content {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.agile-team__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.agile-team__heading {
+  line-height: 1.2;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.agile-team__highlight {
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  padding: 0 0.8rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.agile-team__description {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.agile-team__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.agile-team__feature {
+  padding: 20px;
+  border: 4px solid #f4f6f8 !important;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all ease-in-out 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.agile-team__feature:hover {
+  background: #ffffff;
+  color: #000;
+}
+
+.agile-team__feature-icon {
+  color: #fff;
+  background: #37bc9b;
+  height: 20px;
+  width: 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 2px;
+}
+
+.agile-team__image-wrapper {
+  width: 50%;
+  padding: 0 2rem;
+}
+
+.agile-team__image {
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .agile-team {
+    padding: 4rem 0;
+  }
+  .agile-team__content {
+    flex-direction: column-reverse;
+  }
+  .agile-team__info {
+    width: 100%;
+    gap: 0.8rem;
+  }
+  .agile-team__features {
+    grid-template-columns: 1fr;
+  }
+  .agile-team__image-wrapper {
+    width: 100%;
+  }
+  .agile-team__image {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  .agile-team__content {
+    flex-direction: column-reverse;
+  }
+  .agile-team__info {
+    width: 100%;
+    gap: 0.8rem;
+  }
+  .agile-team__image-wrapper {
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .agile-team__content {
+    align-items: flex-start;
+  }
+  .agile-team__info {
+    gap: 1rem;
+  }
+  .agile-team__feature {
+    margin: 0.5rem;
+  }
+}
