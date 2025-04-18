@@ -16,7 +16,7 @@ const Pricing = () => {
               <div className="pricing__tag">{plan.title}</div>
               <h2 className="pricing__description">{plan.description}</h2>
               <div className="pricing__price">
-                ${plan.price}{" "}
+                ₹{plan.price}{" "}
                 <span className="pricing__price-period">/{plan.period}</span>
               </div>
               <ul className="pricing__features">

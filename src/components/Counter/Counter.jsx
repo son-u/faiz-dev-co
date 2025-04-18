@@ -30,7 +30,7 @@ const Counter = () => {
     <>
       <div className="counter-parent-container">
         <div className="counter">
-          <section className="counter__stats container" id="stats" ref={sectionRef}>
+          <section className="counter__stats primary-container" id="stats" ref={sectionRef}>
             <div className="counter__container">
               <div className="counter__grid">
                 {statsData.map((stat, index) => (

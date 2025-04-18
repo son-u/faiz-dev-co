@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact container">
+    <section id="contact" className="contact primary-container">
       <div className="contact__container">
         <div className="contact__content">
           {/* Contact Form Block */}

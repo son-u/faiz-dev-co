@@ -18,7 +18,7 @@ const FoundersStory = () => {
         </div>
 
         <div className="founders__description">
-          <h5 className="founders__description-heading">Founders' Story</h5>
+          <h5 className="founders__description-heading shine">Founders' Story</h5>
           <h2 className="founders__description-title">
             Building Strong, Lasting Partnerships
           </h2>

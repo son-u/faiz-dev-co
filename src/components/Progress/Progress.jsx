@@ -3,9 +3,8 @@ import "./Progress.css";
 const Progress = () => {
   return (
     <>
-      
       <div className="parent-progress">
-        <div className="container sub-progress">
+        <div className="primary-container sub-progress">
           <h2 className="progress-heading">Empowered by Progress</h2>
           <p className="progress-para secondary-container">
             From concept to deployment, the process involves planning,
@@ -16,7 +15,6 @@ const Progress = () => {
           <div className="mobile-progress-bar"></div>
         </div>
       </div>
-    
     </>
   );
 };

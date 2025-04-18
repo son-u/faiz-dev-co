@@ -9,7 +9,7 @@ const AboutHero = () => {
           <h3 className="about-hero__heading">About Our Company</h3>
           <h2 className="about-hero__subheading">
             Leading the Way in <br />
-            <span className="about-hero__highlight">Web Development</span>
+            <span className="about-hero__highlight shine">Web Development</span>
           </h2>
         </div>
         <div className="about-hero__right">

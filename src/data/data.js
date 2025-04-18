@@ -221,7 +221,7 @@ export const pricingPlans = [
     title: "Starter",
     description:
       "Ideal for maintaining a seamless online presence, perfect for individuals and small businesses.",
-    price: 79,
+    price: 9499,
     period: "year",
     features: [
       "Upto 6 Pages",
@@ -243,7 +243,7 @@ export const pricingPlans = [
     title: "Standard",
     description:
       "Suitable for growing businesses seeking enhanced functionality and performance.",
-    price: 119,
+    price: 14499,
     period: "year",
     features: [
       "Upto 10 Pages",
@@ -265,7 +265,7 @@ export const pricingPlans = [
     title: "Premium",
     description:
       "Designed for established businesses with advanced needs and comprehensive solutions.",
-    price: 159,
+    price: 19499,
     period: "year",
     features: [
       "Unlimited Pages",
