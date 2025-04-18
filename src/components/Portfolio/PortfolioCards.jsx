@@ -58,7 +58,7 @@ const PortfolioCards = () => {
       title: "Breezy",
       imageSrc: "https://faizdevandco.online/images/portfolio/p-7.png",
       description:
-        "Effortless services for a more breezy and organized lifestyle.",
+        "Effortless services for a more breezy and organized to make your better lifestyle.",
       link: "https://breezyhomeservices.com.au",
     },
     {

@@ -30,7 +30,7 @@ const RecentProjects = () => {
         <div className="recent-left-container">
           <div className="curve-container">
             <h3 className="curve-heading">
-              Recent <br /> <span>Projects</span>
+              Recent <br /> <span className="shine">Projects</span>
             </h3>
             <p className="curve-description">
               Discover our innovative web agency projects showcasing remarkable

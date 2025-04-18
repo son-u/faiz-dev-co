@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <header className={isScrolled ? "scrolled" : ""}>
-      <nav className="navbar container">
+      <nav className="navbar primary-container">
         <div className="navbar-logo-container">
           <Link to="/">
             <img

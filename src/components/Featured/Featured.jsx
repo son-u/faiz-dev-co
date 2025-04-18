@@ -28,7 +28,7 @@ const FeaturedCard = ({ project }) => {
 export default function Featured() {
   return (
     <div className="parent-featured-container">
-      <div className="container sub-featured-container">
+      <div className="primary-container sub-featured-container">
         <h2 className="featured-heading">Featured Projects</h2>
         <p className="featured-para secondary-container">
           Here are some awesome featured projects: custom, responsive, and
@@ -40,7 +40,7 @@ export default function Featured() {
             <FeaturedCard key={project.id} project={project} />
           ))}
         </div>
-      </div>  
+      </div>
     </div>
   );
 }

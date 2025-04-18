@@ -140,11 +140,19 @@
   margin: 2rem auto 0;
   display: block;
   width: fit-content;
+  transition: all ease-in-out 0.3s;
 }
 
 .portfolio-cards__load-more-btn:hover {
   background-color: #000;
   color: #fff;
+}
+
+.navigation button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 @keyframes cardEntrance {

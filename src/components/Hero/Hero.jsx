@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
     <div className="parent-container">
-      <div className="container sub-container">
+      <div className="primary-container sub-container">
         <div className="hero-left">
           <h2 className="hero-h2 marker">We Build Products That Drive Success.</h2>
           <p className="hero-para">

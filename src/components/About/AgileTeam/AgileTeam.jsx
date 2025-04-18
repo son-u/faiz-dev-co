@@ -23,7 +23,7 @@ const AgileTeam = () => {
       <div className="agile-team__content">
         <div className="agile-team__info">
           <h3 className="agile-team__heading">
-            Let our <span className="agile-team__highlight">Agile Team</span>{" "}
+            Let our <span className="agile-team__highlight shine">Agile Team</span>{" "}
             understand and serve your needs.
           </h3>
           <p className="agile-team__description">

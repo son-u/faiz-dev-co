@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
     <div className="whychooseus">
       <div className="whychooseus__header">
         <h1 className="whychooseus__title">Why</h1>
-        <h2 className="whychooseus__subtitle">Choose Us?</h2>
+        <h2 className="whychooseus__subtitle shine">Choose Us?</h2>
         <p className="whychooseus__tagline">
           Our Passion For Web Development And Commitment To Quality Make Us The
           Ideal Partner For Your Business.
