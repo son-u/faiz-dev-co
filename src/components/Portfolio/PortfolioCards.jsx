@@ -1,91 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
-// import { cardData } from "../../data";
+import React, { useState, useRef } from "react";
+import { portfolioData } from "../../data/data";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import "./PortfolioCards.css";
 
 const PortfolioCards = () => {
-  const cardData = [
-    {
-      category: "real-estate",
-      title: "Next Level Real Estate",
-      imageSrc: "https://faizdevandco.online/images/portfolio/p-1.png",
-      description:
-        "Innovative solutions for buying, selling, and managing properties with ease.",
-      link: "https://www.nextlevelrealestate.ae",
-    },
-    {
-      category: "healthcare",
-      title: "Brokylyn Helthcare",
-      imageSrc: "https://faizdevandco.online/images/portfolio/p-2.png",
-      description:
-        "Exceptional healthcare services for the Brooklyn community, prioritizing wellness and care.",
-      link: "https://www.brooklynplaza.org",
-    },
-    {
-      category: "healthcare",
-      title: "NYC Healthcare",
-      imageSrc: "https://faizdevandco.online/images/portfolio/p-3.png",
-      description:
-        "Comprehensive healthcare for NYC residents, ensuring better health and peace of mind.",
-      link: "https://www.nychealthandhospitals.org",
-    },
-    {
-      category: "healthcare",
-      title: "Mediclinic",
-      imageSrc: "https://faizdevandco.online/images/portfolio/p-4.png",
-      description:
-        "Advanced healthcare services tailored to your medical needs with expert care.",
-      link: "https://www.mediclinic.ae",
-    },
-    {
-      category: "real-estate",
-      title: "Ex Arabia",
-      imageSrc: "https://faizdevandco.online/images/portfolio/p-5.png",
-      description:
-        "Premium real estate solutions in Arabian markets, offering unmatched service.",
-      link: "https://exarabiauae.com",
-    },
-    {
-      category: "tours-travels",
-      title: "BCD Travels",
-      imageSrc: "https://faizdevandco.online/images/portfolio/p-6.png",
-      description:
-        "Plan your perfect vacation with expert travel packages and great deals.",
-      link: "https://bcdtravel.es",
-    },
-    {
-      category: "others",
-      title: "Breezy",
-      imageSrc: "https://faizdevandco.online/images/portfolio/p-7.png",
-      description:
-        "Effortless services for a more breezy and organized to make your better lifestyle.",
-      link: "https://breezyhomeservices.com.au",
-    },
-    {
-      category: "others",
-      title: "Maid to Clean",
-      imageSrc: "https://faizdevandco.online/images/portfolio/p-8.png",
-      description:
-        "Top-notch cleaning services ensuring sparkling spaces for your home or office.",
-      link: "https://www.maidtoclean.com.au",
-    },
-  ];
-
   const [activeCategory, setActiveCategory] = useState("all");
   const [visibleCount, setVisibleCount] = useState(4);
   const gridRef = useRef(null);
 
-  const filteredCards = cardData.filter(
+  const filteredCards = portfolioData.filter(
     (card) => activeCategory === "all" || card.category === activeCategory
   );
-
   const visibleCards = filteredCards.slice(0, visibleCount);
-
-  useEffect(() => {
-    if (gridRef.current) {
-      gridRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [activeCategory]);
 
   const handleFilterClick = (category) => {
     setActiveCategory(category);
