@@ -15,7 +15,7 @@ const ProjectIdeaBanner = () => {
           </h3>
         </div>
         <div className="project-idea-banner__action">
-          <Link to="#contact" className="project-idea-banner__button">
+          <Link to="/#contact" className="project-idea-banner__button">
             Let's make it Happen?
           </Link>
         </div>

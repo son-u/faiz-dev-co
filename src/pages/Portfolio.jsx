@@ -3,9 +3,10 @@ import "../styles/Portfolio.css";
 import PortfolioCards from "../components/Portfolio/PortfolioCards";
 import RecentProjects from "../components/RecentProjects/RecentProjects";
 import FaqSection from "../components/FaqSection/FaqSection";
-import Footer from "../components/Footer/Footer";
 
 const Portfolio = () => {
+  
+
   return (
     <>
       <RecentProjects />
@@ -25,7 +26,6 @@ const Portfolio = () => {
 
       <PortfolioCards />
       <FaqSection />
-      <Footer />
     </>
   );
 };

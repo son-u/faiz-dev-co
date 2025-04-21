@@ -1,11 +1,8 @@
-import React, { useRef, useEffect } from "react";
-import "swiper/css";
-import "swiper/css/navigation";
+import React from "react";
 import "./RecentProjects.css";
 import projectMockup from "../../assets/images/others/recentProject-mockup.webp";
 
 const RecentProjects = () => {
-
   return (
     <div className="recent-parent-container">
       <div className="sub-recent-container">

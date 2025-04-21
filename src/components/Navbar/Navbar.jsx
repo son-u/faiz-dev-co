@@ -60,12 +60,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={toggleMenu}>
+              <Link to="/#services" onClick={toggleMenu}>
                 Services
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={toggleMenu}>
+              <Link to="/#pricing" onClick={toggleMenu}>
                 Pricing
               </Link>
             </li>
@@ -75,7 +75,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={toggleMenu}>
+              <Link to="/#contact" onClick={toggleMenu}>
                 Contact
               </Link>
             </li>

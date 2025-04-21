@@ -5,7 +5,6 @@ import FoundersStory from "../components/About/FoundersStory/FoundersStory";
 import WhyChooseUs from "../components/About/WhyChooseUs/WhyChooseUs";
 import AgileTeam from "../components/About/AgileTeam/AgileTeam";
 import ProjectIdeaBanner from "../components/About/ProjectIdeaBanner/ProjectIdeaBanner";
-import Footer from "../components/Footer/Footer";
 
 const About = () => {
   return (
@@ -15,7 +14,7 @@ const About = () => {
       <WhyChooseUs />
       <AgileTeam />
       <ProjectIdeaBanner />
-      <Footer />
+      
     </>
   );
 };

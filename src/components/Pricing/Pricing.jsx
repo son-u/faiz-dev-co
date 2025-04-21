@@ -4,7 +4,7 @@ import "./Pricing.css";
 
 const Pricing = () => {
   return (
-    <section className="pricing-section">
+    <section className="pricing-section" id="pricing">
       <div className="pricing__container">
         <div className="pricing__header text-center">
           <h2 className="pricing__title">Pricing</h2>
