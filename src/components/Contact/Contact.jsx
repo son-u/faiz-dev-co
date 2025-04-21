@@ -1,51 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import "./Contact.css";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
+
 const Contact = () => {
-  // Form state management
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [submitting, setSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [error, setError] = useState("");
+  const [state, handleSubmit, reset] = useForm("xdkeqjoy");
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSubmitting(true);
-    setError("");
-
-    try {
-      // Simulated API call - replace with actual backend integration later
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // Reset form on successful submission
-      setFormData({ name: "", email: "", message: "" });
-      setSubmitSuccess(true);
-      setTimeout(() => setSubmitSuccess(false), 3000);
-    } catch (err) {
-      setError("Submission failed. Please try again later.");
-    } finally {
-      setSubmitting(false);
+  useEffect(() => {
+    if (state.succeeded) {
+      const timer = setTimeout(() => {
+        reset();
+      }, 3000);
+      return () => clearTimeout(timer);
     }
-  };
+  }, [state.succeeded, reset]);
+
+  if (state.succeeded) {
+    return (
+      <section id="contact" className="contact primary-container">
+        <div className="contact__container">
+          <div className="contact__content">
+            <div className="contact__form">
+              <div className="contact__form-wrapper">
+                <div className="contact__success-message">
+                  Message sent successfully!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="contact" className="contact primary-container">
       <div className="contact__container">
         <div className="contact__content">
-          {/* Contact Form Block */}
           <div className="contact__form">
             <div className="contact__form-wrapper">
               <form onSubmit={handleSubmit}>
@@ -57,12 +49,16 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
                     required
                     className="contact__form-input"
                   />
+                  <ValidationError
+                    prefix="Name"
+                    field="name"
+                    errors={state.errors}
+                  />
                 </div>
+
                 <div className="contact__form-group">
                   <label htmlFor="email" className="contact__form-label">
                     Email
@@ -71,12 +67,16 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
                     required
                     className="contact__form-input"
                   />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                 </div>
+
                 <div className="contact__form-group">
                   <label htmlFor="message" className="contact__form-label">
                     Message
@@ -84,34 +84,28 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
                     rows="4"
                     required
                     className="contact__form-textarea"
-                  ></textarea>
+                  />
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
-
-                {/* Submission Feedback */}
-                {submitSuccess && (
-                  <div className="contact__success-message">
-                    Message sent successfully!
-                  </div>
-                )}
-                {error && <div className="contact__error-message">{error}</div>}
 
                 <button
                   type="submit"
                   className="contact__form-submit"
-                  disabled={submitting}
+                  disabled={state.submitting}
                 >
-                  {submitting ? "Sending..." : "Enquire Now!"}
+                  {state.submitting ? "Sending..." : "Enquire Now!"}
                 </button>
               </form>
             </div>
           </div>
 
-          {/* Contact Info Block */}
           <div className="contact__info">
             <div className="contact__info-content">
               <h1 className="contact__title">Let's talk</h1>

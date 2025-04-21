@@ -1,6 +1,6 @@
 .parent-container {
   background: #f4f6f8;
-   height: calc(100vh - 1rem - 220px);
+  height: calc(100vh - 1rem - 220px);
 }
 .sub-container {
   display: flex;
@@ -170,6 +170,12 @@
     bottom: -30px;
     left: 50%;
     margin-left: -95px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 769px) {
+  .parent-container {
+    height: calc(55vh - 1rem - 220px);
   }
 }
 

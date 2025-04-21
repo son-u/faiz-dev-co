@@ -27,7 +27,7 @@ const Footer = () => {
                 <FaFacebookF className="footer__social-icon" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/faiz_dev_co/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -45,11 +45,15 @@ const Footer = () => {
               </li>
               <li>
                 <MdArrowForwardIos className="footer__link-icon" />
+                Career
+              </li>
+              <li>
+                <MdArrowForwardIos className="footer__link-icon" />
                 Privacy Policy
               </li>
               <li>
                 <MdArrowForwardIos className="footer__link-icon" />
-                Career
+                Terms & Conditions
               </li>
             </ul>
           </div>

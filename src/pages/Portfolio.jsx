@@ -12,7 +12,7 @@ const Portfolio = () => {
 
       <div className="portfolio-banner">
         <div className="portfolio-banner__content">
-          <h1 className="portfolio-banner__heading">
+          <h1 className="portfolio-banner__heading shine">
             Our Work,
             <br /> Your Success
           </h1>
