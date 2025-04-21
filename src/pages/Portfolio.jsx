@@ -6,6 +6,8 @@ import FaqSection from "../components/FaqSection/FaqSection";
 import Footer from "../components/Footer/Footer";
 
 const Portfolio = () => {
+  
+
   return (
     <>
       <RecentProjects />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaHeart } from "react-icons/fa";
 import { MdArrowForwardIos } from "react-icons/md";
 import "./Footer.css";
@@ -41,31 +42,41 @@ const Footer = () => {
             <ul className="footer__links-list">
               <li className="footer__heading">Company</li>
               <li>
-                <MdArrowForwardIos className="footer__link-icon" /> Contact Us
+                <Link to="/#contact" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Contact Us
+                </Link>
               </li>
               <li>
-                <MdArrowForwardIos className="footer__link-icon" />
-                Privacy Policy
+                <Link to="/privacy-policy" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Privacy Policy
+                </Link>
               </li>
               <li>
-                <MdArrowForwardIos className="footer__link-icon" />
-                Career
+                <Link to="/career" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Career
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links with React Router */}
           <div className="footer__quick-links">
             <ul className="footer__links-list">
               <li className="footer__heading">Quick Links</li>
               <li>
-                <MdArrowForwardIos className="footer__link-icon" /> About Us
+                <Link to="/about" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> About Us
+                </Link>
               </li>
               <li>
-                <MdArrowForwardIos className="footer__link-icon" /> Pricing
+                <Link to="/#pricing" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Pricing
+                </Link>
               </li>
               <li>
-                <MdArrowForwardIos className="footer__link-icon" /> Portfolio
+                <Link to="/portfolio" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Portfolio
+                </Link>
               </li>
             </ul>
           </div>
@@ -78,7 +89,7 @@ const Footer = () => {
           © 2025 - All Rights Reserved | Faiz Dev & Co.
         </p>
         <p className="footer__bottom-text footer__bottom-text--secondary">
-          Developed with <FaHeart className="footer__heart-icon" />{" "}
+          Developed with <FaHeart className="footer__heart-icon" />{' '}
           <a href="#" target="_blank" rel="noopener noreferrer">
             Faiz Dev & Co.
           </a>

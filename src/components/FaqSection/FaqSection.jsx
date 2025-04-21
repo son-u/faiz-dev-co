@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { faqData } from "../../data/data"; // Adjust path if needed
+import { faqData } from "../../data/data"; 
 import { HiOutlinePlus, HiOutlineMinus } from "react-icons/hi";
 import "./FaqSection.css";
 

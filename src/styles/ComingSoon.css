@@ -1,0 +1,38 @@
+.coming-soon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.coming-soon-content {
+  max-width: 400px;
+}
+
+.coming-soon-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.coming-soon-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+} 
+
+.coming-soon-button:hover {
+  background-color: #005bb5;
+}
