@@ -1,5 +1,6 @@
 import React from "react";
 import "./RecentProjects.css";
+import projectMockup from "../../assets/images/others/recentProject-mockup.webp";
 
 const RecentProjects = () => {
   return (
@@ -19,7 +20,7 @@ const RecentProjects = () => {
         </div>
 
         <div className="recent-right-container">
-          <h1>hello from right</h1>
+          <img className="project__mockup bounce-illustration" src={projectMockup} alt="Project__Mockup" />
         </div>
       </div>
     </div>

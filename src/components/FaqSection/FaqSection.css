@@ -117,3 +117,9 @@
     width: 60% !important;
   }
 }
+
+@media (max-width: 1000px) and (min-width: 769px) {
+  .faq__description {
+  padding: 0 5rem;
+  }
+}

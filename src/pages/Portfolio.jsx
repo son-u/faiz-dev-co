@@ -3,7 +3,6 @@ import "../styles/Portfolio.css";
 import PortfolioCards from "../components/Portfolio/PortfolioCards";
 import RecentProjects from "../components/RecentProjects/RecentProjects";
 import FaqSection from "../components/FaqSection/FaqSection";
-import Footer from "../components/Footer/Footer";
 
 const Portfolio = () => {
   
@@ -14,7 +13,7 @@ const Portfolio = () => {
 
       <div className="portfolio-banner">
         <div className="portfolio-banner__content">
-          <h1 className="portfolio-banner__heading">
+          <h1 className="portfolio-banner__heading shine">
             Our Work,
             <br /> Your Success
           </h1>
@@ -27,7 +26,6 @@ const Portfolio = () => {
 
       <PortfolioCards />
       <FaqSection />
-      <Footer />
     </>
   );
 };

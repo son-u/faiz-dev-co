@@ -10,7 +10,6 @@
   overflow-x: auto;
   padding: 1rem 0;
   justify-content: center;
-  --scrollbar-width: thin;
   scroll-behavior: smooth;
 }
 
@@ -34,18 +33,18 @@
   letter-spacing: 0.1rem;
 }
 
-.portfolio-cards__filter-btn.active,
-.portfolio-cards__filter-btn:hover {
+.portfolio-cards__filter-btn.active{
   background: #001219;
   color: white;
 }
 
 .portfolio-cards__grid {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 3rem;
+  justify-content: center;
 }
 
 .portfolio-card {
@@ -205,6 +204,24 @@
   .portfolio-card {
     flex-basis: calc(49% - 1.5rem) !important;
   }
+}
+
+@media (max-width: 1000px) and (min-width: 769px) {
+  .whychooseus{
+    flex-direction: column;
+    margin: 0 5rem;
+    padding: 1rem 0;
+    align-items: flex-start;
+  }
+
+  .project-idea-banner__subheading {
+    font-size: 25px;
+  }
+
+  .agile-team{
+  padding: 3rem 0;
+  }
+  
 }
 
 @media (max-width: 1300px) and (min-width: 1001px) {

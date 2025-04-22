@@ -5,7 +5,7 @@
 .sub-recent-container {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -13,7 +13,7 @@
 }
 
 .recent-left-container {
-  width: 40%;
+  width: 600%;
 }
 
 .curve-container {
@@ -40,12 +40,17 @@
 .curve-description {
   font-size: 18px;
   line-height: 1.5;
-  padding: 1rem 2rem 1rem 4rem;
+  padding: 1rem 2rem 1rem 5rem;
+  width: 90%;
 }
 
 .recent-right-container {
   overflow: hidden;
 }
+.project__mockup{
+  width: 100%;
+}
+
 
 @media (max-width: 357px) and (min-width: 1px) {
   .curve-heading {
@@ -62,11 +67,9 @@
     flex-direction: column;
     padding: 3rem 0;
   }
-
   .recent-left-container {
     width: 100%;
   }
-
   .curve-heading {
     font-size: 30px;
     font-weight: 600;
@@ -103,5 +106,21 @@
   .curve-description {
     font-size: 18px;
     padding: 1rem 6rem;
+  }
+
+  .recent-right-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 999999px) {
+  .recent-right-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .project__mockup{
+    width: 90%;
   }
 }

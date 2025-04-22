@@ -28,7 +28,7 @@ const Footer = () => {
                 <FaFacebookF className="footer__social-icon" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/faiz_dev_co/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -47,12 +47,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/privacy-policy" className="footer__link">
-                  <MdArrowForwardIos className="footer__link-icon" /> Privacy Policy
+                <Link to="/policy-page" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Privacy
+                  Policy
                 </Link>
               </li>
               <li>
-                <Link to="/career" className="footer__link">
+                <Link to="/coming-soon" className="footer__link">
                   <MdArrowForwardIos className="footer__link-icon" /> Career
                 </Link>
               </li>
@@ -89,7 +90,7 @@ const Footer = () => {
           © 2025 - All Rights Reserved | Faiz Dev & Co.
         </p>
         <p className="footer__bottom-text footer__bottom-text--secondary">
-          Developed with <FaHeart className="footer__heart-icon" />{' '}
+          Developed with <FaHeart className="footer__heart-icon" />{" "}
           <a href="#" target="_blank" rel="noopener noreferrer">
             Faiz Dev & Co.
           </a>
