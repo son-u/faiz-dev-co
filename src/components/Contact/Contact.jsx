@@ -3,6 +3,8 @@ import { useForm, ValidationError } from "@formspree/react";
 import "./Contact.css";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Contact = () => {
   const [state, handleSubmit, reset] = useForm("xdkeqjoy");
@@ -119,22 +121,33 @@ const Contact = () => {
             <div className="contact__details">
               <div className="contact__detail">
                 <a
+                  href="tel:+918101395176"
+                  className="contact__link"
+                  title="Phone"
+                >
+                  <IoCallOutline className="contact__icon" />
+                  Call Now
+                </a>
+              </div>
+              <div className="contact__detail">
+                <a
+                  href="https://wa.link/73zyrm"
+                  target="_blank"
+                  className="contact__link"
+                  title="WhatsApp"
+                >
+                  <FaWhatsapp className="contact__icon" />
+                  WhatsApp
+                </a>
+              </div>
+              <div className="contact__detail">
+                <a
                   href="mailto:faizdevandco@gmail.com"
                   className="contact__link"
                   title="Email"
                 >
                   <CiMail className="contact__icon" />
                   faizdevandco@gmail.com
-                </a>
-              </div>
-              <div className="contact__detail">
-                <a
-                  href="tel:+917294800465"
-                  className="contact__link"
-                  title="Phone"
-                >
-                  <IoCallOutline className="contact__icon" />
-                  +91 7294800465
                 </a>
               </div>
             </div>

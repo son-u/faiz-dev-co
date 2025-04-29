@@ -82,10 +82,10 @@ export default function Navbar() {
             <li>
               <a
                 className="btn btn-primary btn-ctrl"
-                href="tel:+917294800465"
+                href="tel:+918101395176"
                 onClick={toggleMenu}
               >
-                +91 7294800465
+                +91 8101395176
               </a>
             </li>
           </ul>

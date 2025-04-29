@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import Loader from "./components/Loader/Loader";
+import TermsPage from "./pages/TermsPage";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/Home"));
@@ -24,6 +25,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
             <Route path="/policy-page" element={<PolicyPage />} />
+            <Route path="/terms-page" element={<TermsPage />} />
 
             {/* Coming Soon page */}
             <Route path="/coming-soon" element={<ComingSoon />} />

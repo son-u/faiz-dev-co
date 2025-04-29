@@ -4,14 +4,12 @@ import "./../styles/ComingSoon.css";
 
 const ComingSoon = () => {
   return (
-    <div className="coming-soon-container">
-      <div className="coming-soon-content">
-        <h1 className="coming-soon-title">We're Launching Soon</h1>
-        <p className="coming-soon-text">
-          Our website is under construction. Stay tuned for something amazing!
-        </p>
+    <div className="parent_coming_soon_container primary-container">
+      <div className="sub_parent_container">
+        <h3 className="coming_soon_title">Coming Soon!</h3>
+        <p className="coming_soon_para">This component is under development.</p>
         <Link to="/" className="coming-soon-button">
-          Go Back Home
+          Go Back
         </Link>
       </div>
     </div>

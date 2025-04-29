@@ -17,7 +17,6 @@
 }
 
 .curve-container {
-  background-image: url("https://res.cloudinary.com/dfbrjwjro/image/upload/v1739511771/curves_xd6dny.png");
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -112,6 +111,13 @@
     width: 100%;
     padding: 0 2rem;
   }
+}
+
+@media (max-width: 1000px) and (min-width: 769px) {
+  .curve-description {
+    width: 100%; 
+  }
+  
 }
 
 @media (min-width: 1025px) and (max-width: 999999px) {
