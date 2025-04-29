@@ -1,0 +1,8 @@
+# Allow all robots to crawl the entire site, except the following pages
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cart/
+
+# Sitemap location
+Sitemap: https://www.faizdevandco.in/sitemap.xml 

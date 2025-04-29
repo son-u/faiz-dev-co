@@ -82,7 +82,10 @@ import wordpress from "../assets/images/services/wordpress.png";
 import shopify from "../assets/images/services/shopify.png";
 import ecommerce from "../assets/images/services/ecommerce-website.png";
 //Images for founders img
-import avatar from "../assets/images/others/avatar.jpg";
+import sonuPotrait from "../assets/images/others/sonu_potrait.webp";
+import faizPotrait from "../assets/images/others/faiz_potrait.webp";
+
+
 
 export const featuredProjects = [
   {
@@ -403,10 +406,10 @@ export const foundersData = [
     name: "Sonu Sharma",
     role: "Full Stack Developer",
     post: "Co Founder",
-    image: avatar,
+    image: sonuPotrait,
     social: {
-      linkedin: "/linkedin-sonu",
-      github: "/github-sonu",
+      linkedin: "https://linkedin.com/in/sonu-sharma007/",
+      github: "https://github.com/son-u",
     },
     variant: "first",
   },
@@ -415,10 +418,10 @@ export const foundersData = [
     name: "Faiz Imam",
     role: "Front-End Developer",
     post: "Co Founder",
-    image: avatar,
+    image: faizPotrait,
     social: {
-      linkedin: "/linkedin-faiz",
-      github: "/github-faiz",
+      linkedin: "https://www.linkedin.com/in/faiz-imam/",
+      github: "https://github.com/IsacSmile",
     },
     variant: "second",
   },

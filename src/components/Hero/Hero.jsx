@@ -15,8 +15,8 @@ const Hero = () => {
             your vision into engaging, user-friendly digital experiences that
             drive results and elevate your brand.
           </p>
-          <Link to="/" className="btn btn-secondary hero-btn">
-            Get Started <IoArrowForwardOutline />
+          <Link to="/#contact" className="btn btn-secondary hero-btn">
+            Get a Quote <IoArrowForwardOutline />
           </Link>
         </div>
         <div className="hero-right">

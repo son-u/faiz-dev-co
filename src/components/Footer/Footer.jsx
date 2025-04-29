@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaInstagram, FaHeart } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaHeart } from "react-icons/fa";
 import { MdArrowForwardIos } from "react-icons/md";
 import "./Footer.css";
 
@@ -21,11 +21,11 @@ const Footer = () => {
             </p>
             <div className="footer__social-icons">
               <a
-                href="https://facebook.com"
+                href="https://www.linkedin.com/company/faiz-dev-co"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebookF className="footer__social-icon" />
+                <FaLinkedin className="footer__social-icon" />
               </a>
               <a
                 href="https://www.instagram.com/faiz_dev_co/"
@@ -47,14 +47,20 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/coming-soon" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Career
+                </Link>
+              </li>
+              <li>
                 <Link to="/policy-page" className="footer__link">
                   <MdArrowForwardIos className="footer__link-icon" /> Privacy
                   Policy
                 </Link>
               </li>
               <li>
-                <Link to="/coming-soon" className="footer__link">
-                  <MdArrowForwardIos className="footer__link-icon" /> Career
+                <Link to="/terms-page" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Terms &
+                  Conditions
                 </Link>
               </li>
             </ul>
