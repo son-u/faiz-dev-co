@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaInstagram, FaHeart } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { AiTwotoneCode } from "react-icons/ai";
 import { MdArrowForwardIos } from "react-icons/md";
 import "./Footer.css";
 
@@ -37,15 +38,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company Links */}
           <div className="footer__company-links">
             <ul className="footer__links-list">
               <li className="footer__heading">Company</li>
-              <li>
-                <Link to="/#contact" className="footer__link">
-                  <MdArrowForwardIos className="footer__link-icon" /> Contact Us
-                </Link>
-              </li>
+
               <li>
                 <Link to="/coming-soon" className="footer__link">
                   <MdArrowForwardIos className="footer__link-icon" /> Career
@@ -58,6 +54,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/refund-page" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Refund
+                  Policy
+                </Link>
+              </li>
+              <li>
                 <Link to="/terms-page" className="footer__link">
                   <MdArrowForwardIos className="footer__link-icon" /> Terms &
                   Conditions
@@ -66,13 +68,18 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Quick Links with React Router */}
           <div className="footer__quick-links">
             <ul className="footer__links-list">
               <li className="footer__heading">Quick Links</li>
+
               <li>
                 <Link to="/about" className="footer__link">
                   <MdArrowForwardIos className="footer__link-icon" /> About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/#contact" className="footer__link">
+                  <MdArrowForwardIos className="footer__link-icon" /> Contact Us
                 </Link>
               </li>
               <li>
@@ -90,16 +97,12 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* Below-Footer Section */}
-      <div className="footer__bottom">
+      <div className="footer__bottom container">
         <p className="footer__bottom-text footer__bottom-text--primary">
           © 2025 - All Rights Reserved | Faiz Dev & Co.
         </p>
         <p className="footer__bottom-text footer__bottom-text--secondary">
-          Developed with <FaHeart className="footer__heart-icon" />{" "}
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            Faiz Dev & Co.
-          </a>
+          <AiTwotoneCode /> Coded by Sonu & Faiz.
         </p>
       </div>
     </>

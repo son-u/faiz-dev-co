@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import Loader from "./components/Loader/Loader";
-import TermsPage from "./pages/TermsPage";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/Home"));
@@ -12,6 +11,8 @@ const About = lazy(() => import("./pages/About"));
 const ComingSoon = lazy(() => import("./pages/ComingSoon"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const PolicyPage = lazy(() => import("./pages/PolicyPage"));
+const RefundPage = lazy(() => import("./pages/RefundPage"));
+const TermsPage = lazy(() => import("./pages/TermsPage"));
 
 function App() {
   return (
@@ -20,17 +21,13 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route element={<Layout />}>
-            {/* Main routes */}
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
             <Route path="/policy-page" element={<PolicyPage />} />
+            <Route path="/refund-page" element={<RefundPage />} />
             <Route path="/terms-page" element={<TermsPage />} />
-
-            {/* Coming Soon page */}
             <Route path="/coming-soon" element={<ComingSoon />} />
-
-            {/* 404 Not Found page */}
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

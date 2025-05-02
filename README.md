@@ -1,8 +1,8 @@
 # Faiz Dev & Co.
 
-> 🎉 Welcome to the **official repository** of Faiz Dev & Co.!  
+> Welcome to the **official repository** of Faiz Dev & Co.!  
 > We’ve built this modern React site from the ground up—powered by cutting-edge libraries and best practices.  
-> More exciting features and improvements are on the way, so stay tuned! 🚀
+> More exciting features and improvements are on the way, so stay tuned!
 
 ---
 

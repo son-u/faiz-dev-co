@@ -73,6 +73,8 @@ import P24 from "../assets/images/portfolio/p-24.png";
 import P25 from "../assets/images/portfolio/p-25.jpg";
 import P26 from "../assets/images/portfolio/p-26.png";
 import P27 from "../assets/images/portfolio/p-27.png";
+import P28 from "../assets/images/portfolio/p-28.png";
+import P29 from "../assets/images/portfolio/p-29.png";
 
 //Images for Services
 import webDesign from "../assets/images/services/web-design.png";
@@ -84,8 +86,6 @@ import ecommerce from "../assets/images/services/ecommerce-website.png";
 //Images for founders img
 import sonuPotrait from "../assets/images/others/sonu_potrait.webp";
 import faizPotrait from "../assets/images/others/faiz_potrait.webp";
-
-
 
 export const featuredProjects = [
   {
@@ -261,7 +261,7 @@ export const pricingPlans = [
     features: [
       "Upto 6 Pages",
       "4-6 Day Delivery",
-      "1 Year Free Hosting",
+      "3 Months Free Hosting",
       "Modern Site",
       "Multi Device Responsive",
       "3 Months Free Site Maintenance",
@@ -283,7 +283,7 @@ export const pricingPlans = [
     features: [
       "Upto 10 Pages",
       "14-20 Day Delivery",
-      "1 Year Free Hosting",
+      "6 Months Free Hosting",
       "eCommerce Functionality",
       "Multi Device Responsive",
       "3 Months Free Site Maintenance",
@@ -701,6 +701,24 @@ export const portfolioData = [
     imageSrc: P27,
     description: "Easy Umrah and hajj pilgramage servies accross India.",
     link: "https://easyumrahtour.com/",
+  },
+  {
+    id: 28,
+    category: "tours-travels",
+    title: "Tickets To Adventure",
+    imageSrc: P28,
+    description:
+      "Seamless domestic and international tours with flights and hotel bookings.",
+    link: "https://ticketstoadventure.com/",
+  },
+  {
+    id: 29,
+    category: "others",
+    title: "Maghay Mela Utsav",
+    imageSrc: P29,
+    description:
+      "Annual Kurseong Maghay Mela: music, dance, tea, oranges, sports, unity.",
+    link: "https://maghaymelautsav.com/",
   },
 ];
 

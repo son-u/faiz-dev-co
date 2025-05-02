@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import "../styles/Portfolio.css";
 import PortfolioCards from "../components/Portfolio/PortfolioCards";
 import RecentProjects from "../components/RecentProjects/RecentProjects";

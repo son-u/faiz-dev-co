@@ -1,4 +1,3 @@
-/* Footer Block */
 .footer {
   color: white;
   background-color: black;
@@ -7,7 +6,6 @@
   margin-top: 4rem;
 }
 
-/* Dot pattern overlay */
 .footer::before {
   content: "";
   position: absolute;
@@ -32,23 +30,20 @@
   pointer-events: none;
 }
 
-/* Footer Content Container */
 .footer__content {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   padding: 0 1.5rem;
-  position: relative; 
+  position: relative;
   z-index: 1;
 }
 
-/* Company Info Section */
 .footer__company-info {
   width: 20%;
   display: flex;
   flex-direction: column;
   align-items: start;
-  /* text-align: center; */
 }
 
 .footer__logo {
@@ -67,7 +62,6 @@
   gap: 0.6rem;
 }
 
-/* Social Icon Link Styles */
 .footer__company-info .footer__social-icons a {
   display: inline-flex;
   align-items: center;
@@ -80,15 +74,14 @@
 }
 
 .footer__company-info .footer__social-icons a:hover {
-  background: #ddd; 
+  background: #ddd;
   transform: scale(1.05);
 }
 
 .footer__social-icon {
-  font-size: 20px; 
-  color: black; 
+  font-size: 20px;
+  color: black;
 }
-
 
 .footer__links-list {
   list-style: none;
@@ -103,7 +96,6 @@
   transition: all ease-in-out 0.3s;
 }
 
-
 .footer__links-list li:not(.footer__heading):hover {
   opacity: 0.7;
   transform: translateX(5px);
@@ -117,12 +109,10 @@
   text-transform: uppercase;
 }
 
-/* Arrow Icon Spacing */
 .footer__link-icon {
   margin-right: 0.5rem;
-  font-size: 16px; 
+  font-size: 16px;
 }
-
 
 footer a:not(.nav-link) {
   color: inherit;
@@ -131,10 +121,16 @@ footer a:not(.nav-link) {
   cursor: pointer;
 }
 
-
 .footer__bottom {
-  text-align: center;
-  padding: 0.4rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin: 0;
+}
+
+.footer__bottom-text {
+  margin: 0;
 }
 
 .footer__bottom-text--primary {
@@ -143,21 +139,17 @@ footer a:not(.nav-link) {
 }
 
 .footer__bottom-text--secondary {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 14px;
+  gap: 0.5rem;
 }
 
-.footer__bottom-text--secondary a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Heart Icon Style */
 .footer__heart-icon {
-  color: red; 
+  color: red;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   .footer__content {
     flex-direction: column;
@@ -166,6 +158,11 @@ footer a:not(.nav-link) {
   }
   .footer__company-info {
     width: 80%;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
 
