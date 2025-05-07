@@ -166,6 +166,13 @@ footer a:not(.nav-link) {
   }
 }
 
+@media (max-width: 375px) {
+ .footer__bottom-text--primary{
+  font-size: 12px !important;
+ }
+ 
+}
+
 @media (min-width: 601px) and (max-width: 768px) {
   .footer__company-info {
     width: 30%;

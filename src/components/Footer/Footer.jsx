@@ -17,7 +17,7 @@ const Footer = () => {
               alt="Faiz Dev & Co. Logo"
             />
             <p className="footer__description">
-              A web agency based in Northeast India, delivering innovative
+              A web agency based in North India, delivering innovative
               website design and development.
             </p>
             <div className="footer__social-icons">

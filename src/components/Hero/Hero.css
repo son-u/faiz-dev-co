@@ -180,6 +180,9 @@
 }
 
 @media (min-width: 1083px) {
+  .hero-para {
+    width: 95%;
+  }
   .marker {
     padding-right: 0;
   }
