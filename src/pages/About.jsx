@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import "../styles/About.css";
+
 import AboutHero from "../components/About/AboutHero/AboutHero";
 import FoundersStory from "../components/About/FoundersStory/FoundersStory";
 import WhyChooseUs from "../components/About/WhyChooseUs/WhyChooseUs";
@@ -10,23 +11,25 @@ import ProjectIdeaBanner from "../components/About/ProjectIdeaBanner/ProjectIdea
 const About = () => (
   <>
     <Helmet>
-      <title>About - Faiz Dev &amp; Co.</title>
+      <title>About Us | Faiz Dev & Co.</title>
       <meta
         name="description"
-        content="Explore Faiz Dev &amp; Co. legacy and commitment to excellence. Our seasoned team delivers responsive web design, bespoke web applications, comprehensive SEO strategies, and targeted digital marketing solutions."
+        content="Explore Faiz Dev & Co.'s legacy and commitment to excellence. We deliver responsive web design, custom applications, SEO strategies, and digital marketing solutions."
       />
       <meta
         name="keywords"
-        content="web development agency, about Faiz Dev & Co, web design experts, SEO optimization team, custom web app developers, digital marketing agency, responsive design team, react based application, web developer near me, react developer near me"
+        content="Faiz Dev & Co, web development agency, custom web applications, SEO experts, digital marketing, responsive design, React development, web design agency"
       />
       <link rel="canonical" href="https://www.faizdevandco.in/about" />
+
+      {/* Open Graph Tags */}
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Faiz Dev &amp; Co." />
+      <meta property="og:site_name" content="Faiz Dev & Co." />
       <meta property="og:url" content="https://www.faizdevandco.in/about" />
-      <meta property="og:title" content="About Us | Faiz Dev &amp; Co." />
+      <meta property="og:title" content="About Us | Faiz Dev & Co." />
       <meta
         property="og:description"
-        content="web development agency, about Faiz Dev & Co, web design experts, SEO optimization team, custom web app developers, digital marketing agency, responsive design team, react based application, web developer near me, react developer near me"
+        content="Learn about Faiz Dev & Co., a trusted web development and digital solutions agency offering expert services in web design, SEO, and React applications."
       />
     </Helmet>
 

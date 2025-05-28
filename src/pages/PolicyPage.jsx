@@ -6,30 +6,30 @@ const PolicyPage = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | Faiz Dev &amp; Co.</title>
+        <title>Privacy Policy | Faiz Dev & Co.</title>
         <meta
           name="description"
-          content="Review Faiz Dev &amp; Co.'s Privacy Policy to understand how we collect, use, and safeguard your personal information while delivering professional web development and digital services."
+          content="Review Faiz Dev & Co.'s Privacy Policy to understand how we collect, use, and safeguard your personal information while delivering professional web development and digital services."
         />
         <meta
           name="keywords"
-          content="privacy policy, data protection, personal information, user data security, Faiz Dev &amp; Co. privacy, web development privacy, GDPR compliance, secure web services"
+          content="privacy policy, data protection, personal information, user data security, Faiz Dev & Co. privacy, web development privacy, GDPR compliance, secure web services"
         />
+
+        {/*  Correct canonical tag */}
         <link rel="canonical" href="https://www.faizdevandco.in/policy-page" />
 
+        {/* Open Graph meta for social sharing */}
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Faiz Dev &amp; Co." />
+        <meta property="og:site_name" content="Faiz Dev & Co." />
         <meta
           property="og:url"
           content="https://www.faizdevandco.in/policy-page"
         />
-        <meta
-          property="og:title"
-          content="Privacy Policy | Faiz Dev &amp; Co."
-        />
+        <meta property="og:title" content="Privacy Policy | Faiz Dev & Co." />
         <meta
           property="og:description"
-          content="Understand how Faiz Dev &amp; Co. collects, uses, and protects your personal data when you use our web development and digital services."
+          content="Understand how Faiz Dev & Co. collects, uses, and protects your personal data when you use our web development and digital services."
         />
       </Helmet>
 
@@ -37,8 +37,7 @@ const PolicyPage = () => {
         <div className="sub__container">
           <h2>Privacy Policy</h2>
           <p className="last-updated">
-            {" "}
-            <strong>Last updated :</strong> May 01, 2025
+            <strong>Last updated:</strong> May 01, 2025
           </p>
           <p>
             At Faiz Dev & Co., your privacy is our priority. This policy
@@ -74,7 +73,7 @@ const PolicyPage = () => {
           <ul>
             <li>With trusted providers (hosting, payments, email).</li>
             <li>When required by law or legal processes.</li>
-            <li>In business transfers (e.g. merger or sale).</li>
+            <li>In business transfers (e.g., merger or sale).</li>
           </ul>
         </div>
 
@@ -82,7 +81,7 @@ const PolicyPage = () => {
           <h3>Security & Your Rights</h3>
           <p>
             We apply safeguards, but no internet transfer is 100% secure. You
-            can <strong>access</strong>, <strong>update</strong> or{" "}
+            can <strong>access</strong>, <strong>update</strong>, or{" "}
             <strong>delete</strong> your data, and you can{" "}
             <strong>unsubscribe</strong> from marketing emails at any time.
           </p>
@@ -94,7 +93,9 @@ const PolicyPage = () => {
             If you have any questions or concerns about this Privacy Policy,
             please contact us:
             <br />
-            <a href="mailto:faizdevandco@gmail.com">faizdevandco@gmail.com</a>
+            <a href="mailto:faizdevandco@gmail.com" rel="noopener noreferrer">
+              faizdevandco@gmail.com
+            </a>
           </p>
         </div>
       </div>
