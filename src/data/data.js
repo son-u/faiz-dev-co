@@ -251,74 +251,148 @@ export const servicesData = [
   },
 ];
 
-export const pricingPlans = [
-  {
-    title: "Starter",
-    description:
-      "Ideal for maintaining a seamless online presence, perfect for individuals and small businesses.",
-    price: 9499,
-    period: "year",
-    features: [
-      "Upto 6 Pages",
-      "4-6 Day Delivery",
-      "3 Months Free Hosting",
-      "Modern Site",
-      "Multi Device Responsive",
-      "3 Months Free Site Maintenance",
-      "Form & Contact Section",
-      "Basic SEO",
-      "Google Analytics",
-    ],
-    cta: {
-      text: "Enquire now",
-      link: "#contact",
+// Pricing Here 
+// Shared call-to-action for all plans
+const commonCTA = {
+  text: "Enquire now",
+  link: "#contact",
+};
+
+export const pricingPlans = {
+  wordpress: [
+    {
+      id: "wp-starter",
+      title: "Starter",
+      description:
+        "Ideal For Maintaining A Seamless Online Presence, Perfect For Individuals And Small Businesses.",
+      price: 9499,
+      period: "Lifetime",
+      features: [
+        "Up to 5 Pages",
+        "5-7 Day Delivery",
+        "Clean, modern design",
+        "2 Months Free Site Maintenance",
+        "Form & Contact Section",
+        "Basic SEO setup",
+        "Google Analytics",
+        "2 revisions included",
+        "Astra Pro",
+        "Elementor Pro",
+      ],
+      cta: commonCTA,
     },
-  },
-  {
-    title: "Standard",
-    description:
-      "Suitable for growing businesses seeking enhanced functionality and performance.",
-    price: 14499,
-    period: "year",
-    features: [
-      "Upto 10 Pages",
-      "14-20 Day Delivery",
-      "6 Months Free Hosting",
-      "eCommerce Functionality",
-      "Multi Device Responsive",
-      "3 Months Free Site Maintenance",
-      "Payment Integration",
-      "Basic SEO",
-      "Google Analytics",
-    ],
-    cta: {
-      text: "Enquire now",
-      link: "#contact",
+    {
+      id: "wp-standard",
+      title: "Standard",
+      description:
+        "Suitable For Growing Businesses Seeking Enhanced Functionality And Performance.",
+      price: 14499,
+      period: "Lifetime",
+      features: [
+        "Up to 10 Pages",
+        "10-15 Day Delivery",
+        "Astra Pro + Elementor Pro",
+        "Custom-branded Design",
+        "eCommerce Functionality",
+        "Payment Gateway Integration",
+        "3 Months Free Hosting",
+        "3 Months Free Site Maintenance",
+        "SEO setup & Google Analytics",
+        "Up to 8 products (Assistance)",
+        "Priority WhatsApp support",
+        "4 revisions included",
+      ],
+      cta: commonCTA,
     },
-  },
-  {
-    title: "Premium",
-    description:
-      "Designed for established businesses with advanced needs and comprehensive solutions.",
-    price: 19499,
-    period: "year",
-    features: [
-      "Unlimited Pages",
-      "24-30 Day Delivery",
-      "1 Year Free Hosting",
-      "eCommerce Functionality",
-      "Multi Device Responsive",
-      "6 Months Free Site Maintenance",
-      "Payment Integration",
-      "Advanced SEO",
-      "Real-time Monitoring and Analytics",
-    ],
-    cta: {
-      text: "Enquire now",
-      link: "#contact",
+    {
+      id: "wp-premium",
+      title: "Premium",
+      description:
+        "Unlock unlimited pages, premium Astra & Elementor Pro, advanced integrations and optimizations for scalable WordPress.",
+      price: 19499,
+      period: "Lifetime",
+      features: [
+        "Unlimited Pages",
+        "18-25 Day Delivery",
+        "Astra Pro + Elementor Pro",
+        "Fully Professional Design",
+        "Advanced eCommerce Functionality",
+        "Payment Gateway Integration",
+        "6 Months Free Hosting",
+        "6 Months Free Site Maintenance",
+        "Advanced SEO Setup",
+        "Real-time Monitoring and Analytics",
+        "Priority WhatsApp & email support",
+        "Extended Revisions",
+        "Custom Training & Handover Session",
+      ],
+      cta: commonCTA,
     },
-  },
-];
+  ],
+
+  custom: [
+    {
+      id: "custom-standard",
+      title: "Standard",
+      description:
+        "Ideal For Small Businesses Or Personal Brands That Need A Fast, Custom-Built Website Without Complex Features.",
+      price: 15499,
+      period: "Lifetime",
+      features: [
+        "HTML, CSS, JS & PHP",
+        "Up to 5 dynamic pages",
+        "7-10 Day Delivery",
+        "Clean and modern UI/UX",
+        "Contact form with PHP backend",
+        "Basic SEO setup",
+        "Google Analytics integration",
+        "3 Months Free Hosting",
+        "3 Months Free Site Maintenance",
+        "Priority WhatsApp support",
+        "2 revisions included",
+      ],
+      cta: commonCTA,
+    },
+    {
+      id: "custom-professional",
+      title: "Professional",
+      description:
+        "Great For Scaling E-Commerce Businesses With Powerful Features, Secure Payments And Full Admin Access.",
+      price: 45000,
+      period: "Lifetime",
+      features: [
+        "Built with MERN Stack",
+        "Up to 10 dynamic pages",
+        "18-20 Day Delivery",
+        "Fully Professional Design",
+        "Advanced eCommerce Functionality",
+        "JWT-based login & customer dashboard",
+        "Admin Dashboard",
+        "Admin CRUD + bulk import/export",
+        "Payment Gateway Integration",
+        "6 Months Free Site Maintenance",
+        "Advanced SEO Setup",
+        "Real-time Monitoring and Analytics",
+        "Priority WhatsApp & email support",
+        "4 Revisions Included",
+      ],
+      cta: commonCTA,
+    },
+    {
+      id: "custom-custom",
+      title: "Custom",
+      description:
+        "Have Unique Requirements? Our Expert Team Collaborates With You To Build A Fully Custom-Coded Solution Tailored To Your Exact Needs.",
+      price: null,
+      period: null,
+      features: [],
+      cta: commonCTA,
+      isCustomContact: true,
+    },
+  ],
+};
+
+
 
 export const testimonialsData = [
   {

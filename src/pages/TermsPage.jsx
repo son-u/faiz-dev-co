@@ -6,30 +6,30 @@ const TermsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Terms and Conditions | Faiz Dev &amp; Co.</title>
+        <title>Terms and Conditions | Faiz Dev & Co.</title>
         <meta
           name="description"
-          content="Review the Terms and Conditions of Faiz Dev &amp; Co. to understand the rules, obligations, and legal agreements involved in using our web development services."
+          content="Review Faiz Dev & Co.'s Terms and Conditions outlining the rules, responsibilities, and legal agreements involved in using our web development and digital services."
         />
         <meta
           name="keywords"
-          content="web development, new web devloper, new web agency near me, terms and conditions, service agreement, Faiz Dev &amp; Co. terms, website usage rules, legal agreement, service policies, user obligations"
+          content="Terms and Conditions, Faiz Dev & Co, web development agreement, service terms, website usage, legal agreement, development policies, user obligations"
         />
         <link rel="canonical" href="https://www.faizdevandco.in/terms-page" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Faiz Dev &amp; Co." />
+        <meta property="og:site_name" content="Faiz Dev & Co." />
         <meta
           property="og:url"
           content="https://www.faizdevandco.in/terms-page"
         />
         <meta
           property="og:title"
-          content="Terms and Conditions | Faiz Dev &amp; Co."
+          content="Terms and Conditions | Faiz Dev & Co."
         />
         <meta
           property="og:description"
-          content="Learn about Faiz Dev &amp; Co.'s Terms and Conditions, outlining the rights, responsibilities, and expectations when using our professional digital services."
+          content="Understand Faiz Dev & Co.'s service terms and legal policies. Know your rights and obligations when engaging with our web development services."
         />
       </Helmet>
 
@@ -37,114 +37,95 @@ const TermsPage = () => {
         <div className="sub__container">
           <h2>Terms and Conditions</h2>
           <p>
-            <strong>Last Updated :</strong> May 01, 2025
+            <strong>Last Updated:</strong> June 05, 2025
           </p>
         </div>
 
         <div className="sub__container">
           <h3>1. Acceptance of Terms</h3>
           <p>
-            By accessing or using our website, requesting a quote, or engaging
-            Faiz Dev & Co.'s services, you agree to these Terms and Conditions.
-            If you do not agree, please do not use or request our services.
+            By using our website, requesting services, or engaging Faiz Dev &
+            Co., you agree to these Terms and Conditions. If you do not agree,
+            please refrain from using our services.
           </p>
         </div>
 
         <div className="sub__container">
           <h3>2. Services Provided</h3>
           <p>
-            Faiz Dev & Co. offers website design, development, hosting setup,
-            and maintenance services tailored to businesses and individuals.
-            Scope, deliverables, timelines, and pricing will be outlined in your
-            individual proposal.
+            We provide website design, development, hosting setup, and
+            maintenance services. Each service engagement will be detailed in a
+            custom proposal.
           </p>
         </div>
 
         <div className="sub__container">
           <h3>3. Payment Terms</h3>
           <p>
-            All fees for services must be paid according to the schedule in your
-            proposal. Hosting and maintenance charges (if included) are billed
-            in advance. Payments are processed securely through our chosen
-            payment gateways.
+            All service fees must be paid as per the agreement. Hosting and
+            maintenance may be billed in advance. Payments are securely
+            processed through designated gateways.
           </p>
         </div>
-
-        
 
         <div className="sub__container">
           <h3>4. Intellectual Property</h3>
           <p>
-            All designs, code, and materials created by Faiz Dev & Co. remain
-            our intellectual property until full payment is received. Upon
-            payment, you receive a non-exclusive, non-transferable license to
-            use the deliverables for your project. Unauthorized reproduction or
-            distribution is prohibited.
+            All deliverables remain our property until full payment is received.
+            Upon payment, a limited license is granted for use in your project
+            only.
           </p>
         </div>
 
         <div className="sub__container">
           <h3>5. Disclaimer</h3>
           <p>
-            Services and deliverables are provided “AS IS” and “AS AVAILABLE.”
-            Faiz Dev & Co. disclaims all warranties, express or implied,
-            including merchantability or fitness for a particular purpose. Your
-            sole remedy for any defects is correction as outlined in your
-            proposal.
+            Services are provided “as is” without warranties. Your sole remedy
+            is correction as per your agreement or proposal.
           </p>
         </div>
 
         <div className="sub__container">
           <h3>6. User Conduct</h3>
           <p>
-            You agree not to misuse our website or services, including but not
-            limited to:
+            You agree not to misuse our website or services. Prohibited
+            activities include:
           </p>
           <ul>
-            <li>
-              Sharing admin or login credentials with unauthorized parties.
-            </li>
-            <li>
-              Attempting to disrupt or gain unauthorized access to our systems.
-            </li>
-            <li>Uploading malicious or infringing content.</li>
+            <li>Sharing login credentials with unauthorized users</li>
+            <li>Attempting to breach security or access unauthorized areas</li>
+            <li>Uploading harmful, unlawful, or infringing content</li>
           </ul>
         </div>
 
         <div className="sub__container">
           <h3>7. Modifications to Terms</h3>
           <p>
-            Faiz Dev & Co. reserves the right to update or modify these Terms
-            and Conditions at any time without prior notice. Your continued use
-            or engagement after changes constitutes acceptance of the new terms.
+            We reserve the right to modify these Terms at any time. Continued
+            use implies acceptance of the updated terms.
           </p>
         </div>
 
         <div className="sub__container">
           <h3>8. Account Termination</h3>
           <p>
-            We may suspend or terminate your access to any hosted services or
-            our website if you breach these Terms or for any other reason at our
-            discretion. Termination does not relieve you of obligations to pay
-            outstanding fees.
+            We may suspend or terminate services if these Terms are violated.
+            Outstanding payments remain due upon termination.
           </p>
         </div>
 
         <div className="sub__container">
-          <h3>9. Governing Law and Jurisdiction</h3>
+          <h3>9. Governing Law</h3>
           <p>
-            These Terms and Conditions are governed by the laws of India. Any
-            disputes arising under or in connection with these Terms shall be
-            subject to the exclusive jurisdiction of the courts in West Bengal,
-            India.
+            These Terms are governed by Indian law. Jurisdiction resides with
+            courts located in West Bengal, India.
           </p>
         </div>
 
         <div className="sub__container">
           <h3>10. Contact Us</h3>
           <p>
-            If you have any questions or concerns about this Terms & Conditions,
-            please contact us:
+            Questions or concerns? Contact us at:
             <br />
             <a href="mailto:faizdevandco@gmail.com">faizdevandco@gmail.com</a>
           </p>

@@ -1,30 +1,31 @@
-import React from "react";
 import "./Hero.css";
 import { Link } from "react-router-dom";
-import { IoArrowForwardOutline } from "react-icons/io5";
-import heroImg from "../../assets/images/illustrations/building_websites-hero-img.svg"
+import heroImg from "../../assets/images/others/hero_macbook_img.png";
 const Hero = () => {
   return (
     <>
-    <div className="parent-container">
-      <div className="primary-container sub-container">
-        <div className="hero-left">
-          <h2 className="hero-h2 marker">We Build Products That Drive Success.</h2>
-          <p className="hero-para">
-            Specializing in innovative web design and development, we transform
-            your vision into engaging, user-friendly digital experiences that
-            drive results and elevate your brand.
+      <div className="parent-container">
+        <div className="primary-container sub-container">
+          <h1 className="hero_heading">
+            We Build Products <br />{" "}
+            <span className="hero_heading_span">That Drive Success.</span>
+          </h1>
+          <p className="hero_small_para">
+            Specializing in innovative web design and development.
           </p>
-          <Link to="/#contact" className="btn btn-secondary hero-btn">
-            Get a Quote <IoArrowForwardOutline />
-          </Link>
-        </div>
-        <div className="hero-right">
-            <img className="hero-img bounce-illustration" src={heroImg} alt="hero-img"/>
+          <div className="hero-btn_container">
+            <Link to="#contact">
+              <button className="hero-btn hero-btn-1">get a quote</button>
+            </Link>
+            <Link to="#services">
+              <button className="hero-btn hero-btn-2">view services</button>
+            </Link>
+          </div>
+          <div className="hero_img_container">
+            <img src={heroImg} alt="Hero_image" />
+          </div>
         </div>
       </div>
-    </div>
-      <div className="hero-wave"></div>
     </>
   );
 };

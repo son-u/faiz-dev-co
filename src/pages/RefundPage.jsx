@@ -6,32 +6,31 @@ const RefundPage = () => {
   return (
     <>
       <Helmet>
-        <title>Refund Policy | Faiz Dev &amp; Co.</title>
+        <title>Refund Policy | Faiz Dev & Co.</title>
         <meta
           name="description"
-          content="Read Faiz Dev &amp; Co.'s Refund Policy to understand the conditions under which refunds are considered for our web development services."
+          content="Read Faiz Dev & Co.'s Refund Policy to understand the conditions under which refunds are considered for our web development services."
         />
         <meta
           name="keywords"
-          content="refund policy, web development refund, Faiz Dev &amp; Co. refund, service cancellation, non-refundable services, web development terms"
+          content="refund policy, web development refund, Faiz Dev & Co. refund, service cancellation, non-refundable services, web development terms"
         />
+
         <link
           rel="canonical"
           href="https://www.faizdevandco.in/refund-policy"
         />
+
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Faiz Dev &amp; Co." />
+        <meta property="og:site_name" content="Faiz Dev & Co." />
         <meta
           property="og:url"
           content="https://www.faizdevandco.in/refund-policy"
         />
-        <meta
-          property="og:title"
-          content="Refund Policy | Faiz Dev &amp; Co."
-        />
+        <meta property="og:title" content="Refund Policy | Faiz Dev & Co." />
         <meta
           property="og:description"
-          content="Understand Faiz Dev &amp; Co.'s policies regarding refunds for web development services. Know your rights and limitations."
+          content="Understand Faiz Dev & Co.'s policies regarding refunds for web development services. Know your rights and limitations."
         />
       </Helmet>
 
@@ -39,16 +38,16 @@ const RefundPage = () => {
         <div className="sub__container">
           <h2>Refund Policy</h2>
           <p className="last-updated">
-            <strong>Last updated:</strong> May 01, 2025
+            <strong>Last updated:</strong> June 05, 2025
           </p>
         </div>
 
         <div className="sub__container">
           <h3>1. Introduction</h3>
           <p>
-            Thank you for choosing Faiz Dev &amp; Co. for your website
-            development needs. This Refund Policy explains when, if ever, we
-            offer refunds for our web development services.
+            Thank you for choosing Faiz Dev & Co. for your website development
+            needs. This Refund Policy explains when, if ever, we offer refunds
+            for our services.
           </p>
         </div>
 
@@ -85,8 +84,8 @@ const RefundPage = () => {
         <div className="sub__container">
           <h3>4. Final Decision</h3>
           <p>
-            All refund requests are reviewed by the Faiz Dev &amp; Co.
-            leadership team. Our decision is final and binding.
+            All refund requests are reviewed by the Faiz Dev & Co. leadership
+            team. Our decision is final and binding.
           </p>
         </div>
 
@@ -105,7 +104,9 @@ const RefundPage = () => {
             If you have any questions or concerns about this Refund Policy,
             please contact us:
             <br />
-            <a href="mailto:faizdevandco@gmail.com">faizdevandco@gmail.com</a>
+            <a href="mailto:faizdevandco@gmail.com" rel="noopener noreferrer">
+              faizdevandco@gmail.com
+            </a>
           </p>
         </div>
       </div>
