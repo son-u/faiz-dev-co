@@ -16,13 +16,11 @@ const RefundPage = () => {
           content="refund policy, web development refund, Faiz Dev & Co. refund, service cancellation, non-refundable services, web development terms"
         />
 
-        {/* Canonical Tag (must match the live indexed URL) */}
         <link
           rel="canonical"
           href="https://www.faizdevandco.in/refund-policy"
         />
 
-        {/* Open Graph Meta Tags */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Faiz Dev & Co." />
         <meta
@@ -40,7 +38,7 @@ const RefundPage = () => {
         <div className="sub__container">
           <h2>Refund Policy</h2>
           <p className="last-updated">
-            <strong>Last updated:</strong> May 01, 2025
+            <strong>Last updated:</strong> June 05, 2025
           </p>
         </div>
 

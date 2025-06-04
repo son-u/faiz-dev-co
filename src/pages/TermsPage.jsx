@@ -17,7 +17,6 @@ const TermsPage = () => {
         />
         <link rel="canonical" href="https://www.faizdevandco.in/terms-page" />
 
-        {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Faiz Dev & Co." />
         <meta
@@ -38,7 +37,7 @@ const TermsPage = () => {
         <div className="sub__container">
           <h2>Terms and Conditions</h2>
           <p>
-            <strong>Last Updated:</strong> May 01, 2025
+            <strong>Last Updated:</strong> June 05, 2025
           </p>
         </div>
 

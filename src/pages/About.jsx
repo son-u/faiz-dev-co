@@ -22,7 +22,6 @@ const About = () => (
       />
       <link rel="canonical" href="https://www.faizdevandco.in/about" />
 
-      {/* Open Graph Tags */}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Faiz Dev & Co." />
       <meta property="og:url" content="https://www.faizdevandco.in/about" />

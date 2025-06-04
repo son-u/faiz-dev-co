@@ -20,15 +20,13 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header className={isScrolled ? "scrolled" : ""}>
       <nav className="navbar primary-container">
+        {/* Logo Container */}
         <div className="navbar-logo-container">
           <Link to="/">
             <img
@@ -39,6 +37,36 @@ export default function Navbar() {
             />
           </Link>
         </div>
+
+        <div className="navbar-menu">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/#services">Services</Link>
+            </li>
+            <li>
+              <Link to="/#pricing">Pricing</Link>
+            </li>
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/#contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="navbar-button">
+          <a className="btn btn-primary" href="tel:+918101395176">
+            +91 8101395176
+          </a>
+        </div>
+
         <div
           className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
           onClick={toggleMenu}
@@ -47,6 +75,7 @@ export default function Navbar() {
           <span></span>
           <span></span>
         </div>
+
         <div className={`nav-content ${isMenuOpen ? "open" : ""}`}>
           <ul>
             <li>
@@ -79,6 +108,7 @@ export default function Navbar() {
                 Contact
               </Link>
             </li>
+            
             <li>
               <a
                 className="btn btn-primary btn-ctrl"

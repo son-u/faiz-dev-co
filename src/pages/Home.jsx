@@ -27,7 +27,6 @@ const Home = () => {
         />
         <link rel="canonical" href="https://www.faizdevandco.in/" />
 
-        {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.faizdevandco.in/" />
         <meta

@@ -16,10 +16,8 @@ const PolicyPage = () => {
           content="privacy policy, data protection, personal information, user data security, Faiz Dev & Co. privacy, web development privacy, GDPR compliance, secure web services"
         />
 
-        {/*  Correct canonical tag */}
         <link rel="canonical" href="https://www.faizdevandco.in/policy-page" />
 
-        {/* Open Graph meta for social sharing */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Faiz Dev & Co." />
         <meta
@@ -37,7 +35,7 @@ const PolicyPage = () => {
         <div className="sub__container">
           <h2>Privacy Policy</h2>
           <p className="last-updated">
-            <strong>Last updated:</strong> May 01, 2025
+            <strong>Last updated:</strong> June 05, 2025
           </p>
           <p>
             At Faiz Dev & Co., your privacy is our priority. This policy
