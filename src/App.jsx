@@ -8,6 +8,7 @@ import Loader from "./components/Loader/Loader";
 const Home = lazy(() => import("./pages/Home"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const About = lazy(() => import("./pages/About"));
+const Careers = lazy(() => import("./pages/Careers"));
 const ComingSoon = lazy(() => import("./pages/ComingSoon"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const PolicyPage = lazy(() => import("./pages/PolicyPage"));
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
+            <Route path="/careers" element={<Careers />} />
             <Route path="/policy-page" element={<PolicyPage />} />
             <Route path="/refund-page" element={<RefundPage />} />
             <Route path="/terms-page" element={<TermsPage />} />

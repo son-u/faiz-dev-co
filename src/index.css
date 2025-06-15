@@ -1,4 +1,19 @@
-@import "./assets/fonts/nunito.css";
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../src/assets/fonts/NunitoSans.woff2") format("truetype-variations");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../src/assets/fonts/NunitoSans-Italic.woff2")
+    format("truetype-variations");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
 
 * {
   list-style: none;
@@ -72,7 +87,6 @@ h3,
 h4,
 h5,
 h6 {
-  
   line-height: 1.32;
 }
 
@@ -160,13 +174,12 @@ h6 {
 }
 
 /* Button Shine on hover  */
-.shine{
-   transition: transform 0.3s ease-in-out;
+.shine {
+  transition: transform 0.3s ease-in-out;
   cursor: pointer;
   display: inline-flex;
   overflow: hidden !important;
 }
-
 
 .shine:hover {
   transform: scale(1.04);

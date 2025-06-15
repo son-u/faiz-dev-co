@@ -8,12 +8,14 @@ import {
   FaUsers,
   FaCheckCircle,
 } from "react-icons/fa";
+import { GrAnnounce } from "react-icons/gr";
+import { AiOutlineCode } from "react-icons/ai";
 import ApichaCover from "../assets/images/Featured/Apicha_Cover.png";
 import ApichaSlideUp from "../assets/images/Featured/Apicha-slide-up.png";
-import DayoffCover from "../assets/images/Featured/Day_Off_cover.png";
-import DayoffSlideUp from "../assets/images/Featured/Day0ff-slide-up.png";
 import ForesthillCover from "../assets/images/Featured/forest-hill-cover.png";
 import ForesthillSlideUp from "../assets/images/Featured/Forest-Hill-slideup.png";
+import SunniSlideUp from "../assets/images/Featured/Sunni-slide-up.webp";
+import SunniCover from "../assets/images/Featured/Sunni_cover.webp";
 // images for TabSwitcher
 import expTab from "../assets/images/illustrations/experience.png";
 import flexibilityTab from "../assets/images/illustrations/flexibility.png";
@@ -104,10 +106,10 @@ export const featuredProjects = [
   },
   {
     id: 3,
-    projectName: "Day Off Tours & Travels",
-    website: "dayofftourandtravel.com",
-    backgroundImage: DayoffCover,
-    hoverImage: DayoffSlideUp,
+    projectName: "The Sunni Store",
+    website: "thesunnistore.com",
+    backgroundImage: SunniCover,
+    hoverImage: SunniSlideUp,
   },
 ];
 
@@ -251,7 +253,6 @@ export const servicesData = [
   },
 ];
 
-// Pricing Here 
 // Shared call-to-action for all plans
 const commonCTA = {
   text: "Enquire now",
@@ -268,16 +269,24 @@ export const pricingPlans = {
       price: 9499,
       period: "Lifetime",
       features: [
-        "Up to 5 Pages",
-        "5-7 Day Delivery",
-        "Clean, modern design",
-        "2 Months Free Site Maintenance",
-        "Form & Contact Section",
-        "Basic SEO setup",
-        "Google Analytics",
-        "2 revisions included",
-        "Astra Pro",
-        "Elementor Pro",
+        { text: "Up to 5 Pages" },
+        { text: "5-7 Day Delivery" },
+        { text: "Clean, modern design" },
+        { text: "2 Months Free Site Maintenance" },
+        { text: "Form & Contact Section" },
+        { text: "Basic SEO setup" },
+        { text: "Google Analytics" },
+        { text: "2 revisions included" },
+        {
+          text: "Astra Pro",
+          limited: true,
+          info: "Available on Standard & Premium only",
+        },
+        {
+          text: "Elementor Pro",
+          limited: true,
+          info: "Available on Standard & Premium only",
+        },
       ],
       cta: commonCTA,
     },
@@ -289,18 +298,18 @@ export const pricingPlans = {
       price: 14499,
       period: "Lifetime",
       features: [
-        "Up to 10 Pages",
-        "10-15 Day Delivery",
-        "Astra Pro + Elementor Pro",
-        "Custom-branded Design",
-        "eCommerce Functionality",
-        "Payment Gateway Integration",
-        "3 Months Free Hosting",
-        "3 Months Free Site Maintenance",
-        "SEO setup & Google Analytics",
-        "Up to 8 products (Assistance)",
-        "Priority WhatsApp support",
-        "4 revisions included",
+        { text: "Up to 10 Pages" },
+        { text: "10-15 Day Delivery" },
+        { text: "Astra Pro + Elementor Pro" },
+        { text: "Custom-branded Design" },
+        { text: "eCommerce Functionality" },
+        { text: "Payment Gateway Integration" },
+        { text: "3 Months Free Hosting" },
+        { text: "3 Months Free Site Maintenance" },
+        { text: "SEO setup & Google Analytics" },
+        { text: "Up to 8 products (Assistance)" },
+        { text: "Priority WhatsApp support" },
+        { text: "4 revisions included" },
       ],
       cta: commonCTA,
     },
@@ -312,19 +321,19 @@ export const pricingPlans = {
       price: 19499,
       period: "Lifetime",
       features: [
-        "Unlimited Pages",
-        "18-25 Day Delivery",
-        "Astra Pro + Elementor Pro",
-        "Fully Professional Design",
-        "Advanced eCommerce Functionality",
-        "Payment Gateway Integration",
-        "6 Months Free Hosting",
-        "6 Months Free Site Maintenance",
-        "Advanced SEO Setup",
-        "Real-time Monitoring and Analytics",
-        "Priority WhatsApp & email support",
-        "Extended Revisions",
-        "Custom Training & Handover Session",
+        { text: "Unlimited Pages" },
+        { text: "18-25 Day Delivery" },
+        { text: "Astra Pro + Elementor Pro" },
+        { text: "Fully Professional Design" },
+        { text: "Advanced eCommerce Functionality" },
+        { text: "Payment Gateway Integration" },
+        { text: "6 Months Free Hosting" },
+        { text: "6 Months Free Site Maintenance" },
+        { text: "Advanced SEO Setup" },
+        { text: "Real-time Monitoring and Analytics" },
+        { text: "Priority WhatsApp & email support" },
+        { text: "Extended Revisions" },
+        { text: "Custom Training & Handover Session" },
       ],
       cta: commonCTA,
     },
@@ -339,17 +348,17 @@ export const pricingPlans = {
       price: 15499,
       period: "Lifetime",
       features: [
-        "HTML, CSS, JS & PHP",
-        "Up to 5 dynamic pages",
-        "7-10 Day Delivery",
-        "Clean and modern UI/UX",
-        "Contact form with PHP backend",
-        "Basic SEO setup",
-        "Google Analytics integration",
-        "3 Months Free Hosting",
-        "3 Months Free Site Maintenance",
-        "Priority WhatsApp support",
-        "2 revisions included",
+        { text: "HTML, CSS, JS & PHP" },
+        { text: "Up to 5 dynamic pages" },
+        { text: "7-10 Day Delivery" },
+        { text: "Clean and modern UI/UX" },
+        { text: "Contact form with PHP backend" },
+        { text: "Basic SEO setup" },
+        { text: "Google Analytics integration" },
+        { text: "3 Months Free Hosting" },
+        { text: "3 Months Free Site Maintenance" },
+        { text: "Priority WhatsApp support" },
+        { text: "2 revisions included" },
       ],
       cta: commonCTA,
     },
@@ -361,20 +370,20 @@ export const pricingPlans = {
       price: 45000,
       period: "Lifetime",
       features: [
-        "Built with MERN Stack",
-        "Up to 10 dynamic pages",
-        "18-20 Day Delivery",
-        "Fully Professional Design",
-        "Advanced eCommerce Functionality",
-        "JWT-based login & customer dashboard",
-        "Admin Dashboard",
-        "Admin CRUD + bulk import/export",
-        "Payment Gateway Integration",
-        "6 Months Free Site Maintenance",
-        "Advanced SEO Setup",
-        "Real-time Monitoring and Analytics",
-        "Priority WhatsApp & email support",
-        "4 Revisions Included",
+        { text: "Built with MERN Stack" },
+        { text: "Up to 10 dynamic pages" },
+        { text: "18-20 Day Delivery" },
+        { text: "Fully Professional Design" },
+        { text: "Advanced eCommerce Functionality" },
+        { text: "JWT-based login & customer dashboard" },
+        { text: "Admin Dashboard" },
+        { text: "Admin CRUD + bulk import/export" },
+        { text: "Payment Gateway Integration" },
+        { text: "6 Months Free Site Maintenance" },
+        { text: "Advanced SEO Setup" },
+        { text: "Real-time Monitoring and Analytics" },
+        { text: "Priority WhatsApp & email support" },
+        { text: "4 Revisions Included" },
       ],
       cta: commonCTA,
     },
@@ -391,8 +400,6 @@ export const pricingPlans = {
     },
   ],
 };
-
-
 
 export const testimonialsData = [
   {
@@ -817,5 +824,50 @@ export const faqData = [
     question: "Do you offer support after project delivery?",
     answer:
       "Yes, we offer comprehensive support and maintenance services to ensure your digital presence remains robust.",
+  },
+];
+
+// careersData
+
+export const careersData = [
+  {
+    id: "cold-calling",
+    category: "Marketing & Communication",
+    title: "Cold Calling",
+    location: "India",
+    isRemote: true,
+    postedDate: "June 5, 2025",
+    applyLink: "https://forms.gle/UfjwXe8AEUPQjDGi6",
+    icon: GrAnnounce,
+  },
+  {
+    id: "wordpress-developer",
+    category: "Developer",
+    title: "WordPress Developer",
+    location: "India",
+    isRemote: true,
+    postedDate: "June 5, 2025",
+    applyLink: "https://forms.gle/UfjwXe8AEUPQjDGi6",
+    icon: AiOutlineCode,
+  },
+  {
+    id: "php-developer",
+    category: "Developer",
+    title: "PHP Developer",
+    location: "India",
+    isRemote: true,
+    postedDate: "June 5, 2025",
+    applyLink: "https://forms.gle/UfjwXe8AEUPQjDGi6",
+    icon: AiOutlineCode,
+  },
+  {
+    id: "mern-developer",
+    category: "Developer",
+    title: "MERN Developer",
+    location: "India",
+    isRemote: true,
+    postedDate: "June 5, 2025",
+    applyLink: "https://forms.gle/UfjwXe8AEUPQjDGi6",
+    icon: AiOutlineCode,
   },
 ];

@@ -50,7 +50,7 @@ header.scrolled {
 .navbar-menu ul li a,
 .navbar-button a {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   transition: all ease-in-out 0.3s;
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -173,4 +173,10 @@ header.scrolled {
     margin-top: 10px;
     margin-left: 1rem;
   }
+}
+
+@media (max-width: 380px) {
+    .navbar{
+      padding: 1rem 0.7rem;
+    }
 }

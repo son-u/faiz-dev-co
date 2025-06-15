@@ -21,7 +21,6 @@ const Pricing = () => {
           <h2 className="pricing__title">Pricing</h2>
         </div>
 
-        {/* Tab controls */}
         <div className="pricing_tabs_container">
           <div className="pricing__tabs">
             {["wordpress", "custom"].map((tabKey) => (
@@ -68,33 +67,22 @@ const Pricing = () => {
                   )}
 
                   {plan.features.length > 0 && (
-                    <ul id={plan.id} className="pricing__features">
-                      {plan.features.map((feat, fi) => {
-                        const isStarter = plan.id === "wp-starter";
-                        const lastTwoIndex = plan.features.length - 2;
-                        const isStruckFeature = isStarter && fi >= lastTwoIndex;
-
-                        return (
-                          <li key={fi}>
-                            {feat}
-
-                            {isStruckFeature && (
-                              <button
-                                type="button"
-                                className="info-btn"
-                                aria-label="More info about this feature"
-                              >
-                                ℹ
-                                {/* Tooltip content shown on hover */}
-                                <span className="tooltip">
-                                  This feature is only available on higher
-                                  plans.
-                                </span>
-                              </button>
-                            )}
-                          </li>
-                        );
-                      })}
+                    <ul className="pricing__features">
+                      {plan.features.map(({ text, limited, info }, idx) => (
+                        <li key={idx} className={limited ? "is-limited" : ""}>
+                          <span className="feature__check">✓</span>
+                          <span className="feature__text">{text}</span>
+                          {limited && info && (
+                            <button
+                              type="button"
+                              className="info-btn"
+                              aria-label="More info about this feature"
+                            >
+                              i<span className="tooltip">{info}</span>
+                            </button>
+                          )}
+                        </li>
+                      ))}
                     </ul>
                   )}
                 </div>

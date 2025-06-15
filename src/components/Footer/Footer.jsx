@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { AiTwotoneCode } from "react-icons/ai";
@@ -43,7 +42,7 @@ const Footer = () => {
               <li className="footer__heading">Company</li>
 
               <li>
-                <Link to="/coming-soon" className="footer__link">
+                <Link to="/careers" className="footer__link">
                   <MdArrowForwardIos className="footer__link-icon" /> Career
                 </Link>
               </li>

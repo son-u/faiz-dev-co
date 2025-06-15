@@ -17,12 +17,12 @@
 
 .project-idea-banner__heading {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: capitalize;
 }
 
 .project-idea-banner__subheading {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal;
   text-transform: capitalize;
 }

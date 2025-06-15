@@ -1,6 +1,5 @@
-import React from 'react'
 import "./Featured.css";
-import { featuredProjects } from '../../data/data.js';
+import { featuredProjects } from "../../data/data.js";
 
 const FeaturedCard = ({ project }) => {
   return (
@@ -44,7 +43,3 @@ export default function Featured() {
     </div>
   );
 }
-
-
-
-
