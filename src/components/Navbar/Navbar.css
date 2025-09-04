@@ -1,4 +1,3 @@
-/* Navbar.css */
 header {
   position: sticky;
   top: 1rem;
@@ -60,7 +59,12 @@ header.scrolled {
 .navbar-button a:hover {
   color: #000;
 }
-
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50px;
+}
 .navbar-button {
   justify-self: end;
 }
@@ -173,10 +177,15 @@ header.scrolled {
     margin-top: 10px;
     margin-left: 1rem;
   }
+  .nav-content .btn-ctrl.whatsapp-btn {
+    display: inline-flex !important;
+    width: auto !important;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
 @media (max-width: 380px) {
-    .navbar{
-      padding: 1rem 0.7rem;
-    }
+  .navbar {
+    padding: 1rem 0.7rem;
+  }
 }

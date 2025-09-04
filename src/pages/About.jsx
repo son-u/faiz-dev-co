@@ -1,12 +1,21 @@
-import React from "react";
+import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import "../styles/About.css";
 
 import AboutHero from "../components/About/AboutHero/AboutHero";
-import FoundersStory from "../components/About/FoundersStory/FoundersStory";
 import WhyChooseUs from "../components/About/WhyChooseUs/WhyChooseUs";
-import AgileTeam from "../components/About/AgileTeam/AgileTeam";
 import ProjectIdeaBanner from "../components/About/ProjectIdeaBanner/ProjectIdeaBanner";
+import LazyLoadSection from "../components/LazyLoadSection";
+
+import {
+  SkeletonFoundersStory,
+  SkeletonAgileTeam,
+} from "../components/Skeleton";
+
+const FoundersStory = lazy(() =>
+  import("../components/About/FoundersStory/FoundersStory")
+);
+const AgileTeam = lazy(() => import("../components/About/AgileTeam/AgileTeam"));
 
 const About = () => (
   <>
@@ -33,9 +42,21 @@ const About = () => (
     </Helmet>
 
     <AboutHero />
-    <FoundersStory />
+
+    <LazyLoadSection rootMargin="150px">
+      <Suspense fallback={<SkeletonFoundersStory />}>
+        <FoundersStory />
+      </Suspense>
+    </LazyLoadSection>
+
     <WhyChooseUs />
-    <AgileTeam />
+
+    <LazyLoadSection rootMargin="150px">
+      <Suspense fallback={<SkeletonAgileTeam />}>
+        <AgileTeam />
+      </Suspense>
+    </LazyLoadSection>
+
     <ProjectIdeaBanner />
   </>
 );

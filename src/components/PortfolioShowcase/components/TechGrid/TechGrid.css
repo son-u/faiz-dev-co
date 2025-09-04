@@ -1,0 +1,29 @@
+.tech-grid {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: auto;
+  max-width: 500px;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: none;
+    grid-auto-flow: dense;
+  }
+}
+
+@media (max-width: 640px) {
+  .tech-grid {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

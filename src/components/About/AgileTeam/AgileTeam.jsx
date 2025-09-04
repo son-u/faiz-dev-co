@@ -1,4 +1,3 @@
-import React from "react";
 import { TiTick } from "react-icons/ti";
 import developmentImg from "../../../assets/images/illustrations/development.svg";
 import "./AgileTeam.css";
@@ -44,6 +43,7 @@ const AgileTeam = () => {
             src={developmentImg}
             alt="Development Illustration"
             className="agile-team__image"
+            loading="lazy"
           />
         </div>
       </div>

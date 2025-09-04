@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -23,10 +24,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const whatsappLink = "https://wa.me/918101395176";
+
   return (
     <header className={isScrolled ? "scrolled" : ""}>
       <nav className="navbar primary-container">
-        {/* Logo Container */}
         <div className="navbar-logo-container">
           <Link to="/">
             <img
@@ -60,10 +62,15 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-
         <div className="navbar-button">
-          <a className="btn btn-primary" href="tel:+918101395176">
-            +91 8101395176
+          <a
+            className="btn btn-primary whatsapp-btn"
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp size={20} />
+            <span>WhatsApp</span>
           </a>
         </div>
 
@@ -108,14 +115,16 @@ export default function Navbar() {
                 Contact
               </Link>
             </li>
-            
             <li>
               <a
-                className="btn btn-primary btn-ctrl"
-                href="tel:+918101395176"
+                className="btn btn-primary btn-ctrl whatsapp-btn"
+                href={whatsappLink}
                 onClick={toggleMenu}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                +91 8101395176
+                <FaWhatsapp size={20} />
+                <span>WhatsApp</span>
               </a>
             </li>
           </ul>

@@ -1,0 +1,66 @@
+.card {
+  aspect-ratio: 1 / 1;
+  border-radius: 0.75rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  background-image: radial-gradient(
+    circle farthest-side at 50% 0,
+    #fcfcfd 50%,
+    #ebefff
+  );
+  box-shadow: 0 0 1rem rgba(94, 114, 228, 0.25);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 0;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.card.card--logo .card-content svg {
+  font-size: 2.25rem;
+  color: #333333;
+  opacity: 0.8;
+}
+
+.card.card--plus .card-content {
+  font-size: 1.5rem;
+  color: #a0aec0;
+}
+
+.card:hover::before {
+  box-shadow: 0 0 1.5rem rgba(94, 114, 228, 0.35);
+}
+
+.card.card--empty::before {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  border: 2px dashed #e2e8f0;
+  transition: background-color 0.3s ease;
+}
+
+.card.card--empty:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.card.card--empty:hover::before {
+  background-color: rgba(94, 114, 228, 0.1);
+}

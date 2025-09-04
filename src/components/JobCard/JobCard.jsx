@@ -8,7 +8,7 @@ const JobCard = ({
   title,
   location,
   isRemote = false,
-  postedDate,
+  isActive,
   applyLink,
   icon: CategoryIcon,
 }) => (
@@ -30,12 +30,24 @@ const JobCard = ({
     </div>
 
     <div className="job-card__footer">
-      <div className="job-card__date">{postedDate}</div>
+      {isActive ? (
+        <div className="job-card__status active">
+          <span className="job-card__status-indicator"></span>
+          <span>Active</span>
+        </div>
+      ) : (
+        <div className="job-card__status inactive">
+          <span className="job-card__status-indicator"></span>
+          <span>Inactive</span>
+        </div>
+      )}
+
       <a
-        href={applyLink}
-        className="job-card__apply-link"
+        href={isActive ? applyLink : "#"}
+        className={`job-card__apply-link ${!isActive ? "disabled" : ""}`}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={(e) => !isActive && e.preventDefault()}
       >
         Apply Now <MdOutlineArrowOutward size={16} />
       </a>

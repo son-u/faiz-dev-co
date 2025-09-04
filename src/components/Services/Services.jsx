@@ -1,4 +1,3 @@
-import React from "react";
 import { servicesData } from "../../data/data.js";
 import "./Services.css";
 

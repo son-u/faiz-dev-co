@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import "./Contact.css";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
-
 
 const Contact = () => {
   const [state, handleSubmit, reset] = useForm("xdkeqjoy");

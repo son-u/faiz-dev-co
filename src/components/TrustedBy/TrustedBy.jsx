@@ -1,4 +1,3 @@
-import React from "react";
 import { clientLogos } from "../../data/data.js";
 import "./TrustedBy.css";
 

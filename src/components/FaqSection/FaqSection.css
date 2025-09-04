@@ -72,7 +72,7 @@
 .faq__item-header.active .faq__icon {
   transform: rotate(180deg);
   transform: rotate(180deg) scale(1.1);
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   transition: all ease-in-out 0.3s;
 }
 
@@ -85,7 +85,7 @@
   transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out,
     opacity 0.4s ease;
   font-size: 1.125rem;
-  text-align: left; 
+  text-align: left;
   transition: all ease-in-out 0.3s;
 }
 
@@ -112,7 +112,7 @@
 }
 
 @media (min-width: 1023px) {
-  .faq__description{
+  .faq__description {
     margin: 0 auto 2rem auto;
     width: 60% !important;
   }
@@ -120,6 +120,6 @@
 
 @media (max-width: 1000px) and (min-width: 769px) {
   .faq__description {
-  padding: 0 5rem;
+    padding: 0 5rem;
   }
 }

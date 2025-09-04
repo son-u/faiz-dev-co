@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
@@ -13,6 +12,7 @@ const FoundersCard = ({ founder, variant }) => {
         className="founders__card-image"
         src={founder.image}
         alt={`Founder ${founder.name}`}
+        loading="lazy"
       />
       <h5 className="founders__card-post">{founder.post}</h5>
       <h5 className="founders__card-name">{founder.name}</h5>

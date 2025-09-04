@@ -1,0 +1,17 @@
+.portfolio-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem 2rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .portfolio-showcase {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5rem;
+  }
+}

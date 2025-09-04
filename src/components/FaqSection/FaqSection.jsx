@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { faqData } from "../../data/data"; 
+import { useState } from "react";
+import { faqData } from "../../data/data";
 import { HiOutlinePlus, HiOutlineMinus } from "react-icons/hi";
 import "./FaqSection.css";
 
@@ -10,7 +10,7 @@ const FaqSection = () => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
-  return (    
+  return (
     <div className="faq">
       <div className="faq__container">
         <h1 className="faq__heading">Frequently Asked Questions</h1>

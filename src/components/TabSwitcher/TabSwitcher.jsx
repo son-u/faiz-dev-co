@@ -61,15 +61,17 @@ const TabSwitcher = () => {
       </div>
 
       <div className="tab-switcher-image-container">
-        <img
-          className="tab-switcher-image"
-          src={activeTab.image}
-          alt={activeTab.title}
-          style={{
-            opacity: isTransitioning ? 0 : 1,
-            transition: "all 0.4s ease-in-out",
-          }}
-        />
+        <div className="image-wrapper">
+          <img
+            className="tab-switcher-image"
+            src={activeTab.image}
+            alt={activeTab.title}
+            style={{
+              opacity: isTransitioning ? 0 : 1,
+              transition: "all 0.4s ease-in-out",
+            }}
+          />
+        </div>
       </div>
     </div>
   );

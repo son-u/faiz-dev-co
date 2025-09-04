@@ -1,6 +1,7 @@
-import React, { useState, useRef } from "react";
-import { portfolioData } from "../../data/data";
+import { useState, useRef } from "react";
+import { portfolioData } from "../Portfolio/portfolioData";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import ImageLoader from "./ImageLoader";
 import "./PortfolioCards.css";
 
 const PortfolioCards = () => {
@@ -23,7 +24,7 @@ const PortfolioCards = () => {
   };
 
   return (
-    <div className="portfolio-cards">
+    <div className="portfolio-cards" id="portfolios">
       <div className="portfolio-cards__filter-tabs">
         <button
           className={`portfolio-cards__filter-btn ${
@@ -74,7 +75,11 @@ const PortfolioCards = () => {
             className="portfolio-card"
             style={{ "--index": index }}
           >
-            <img src={card.imageSrc} alt={card.title} className="card-image" />
+            <ImageLoader
+              src={card.imageSrc}
+              alt={card.title}
+              className="card-image"
+            />
             <div className="card-content">
               <div className="card-title-btn">
                 <h3 className="card-title">{card.title}</h3>

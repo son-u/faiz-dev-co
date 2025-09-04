@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { Link } from "react-router-dom";
-import heroImg from "../../assets/images/others/hero_macbook_img.png";
+import heroImg from "../../assets/images/others/hero_macbook_img.svg";
 const Hero = () => {
   return (
     <>
